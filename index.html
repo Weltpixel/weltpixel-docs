@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Documentation — WeltPixel</title>
+  <meta name="description" content="User guides and technical documentation for WeltPixel Magento 2 extensions, themes, and integrations.">
+  <link rel="canonical" href="https://docs.weltpixel.com/">
+  <link rel="icon" href="GA4/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header */
+    .header {
+      background: #1d1d1f;
+      padding: 24px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header a.logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .header .logo-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #f5f5f7;
+      letter-spacing: -0.02em;
+    }
+    .header .logo-sub {
+      font-size: 13px;
+      font-weight: 500;
+      color: #a1a1a6;
+    }
+    .header .back-link {
+      font-size: 13px;
+      font-weight: 500;
+      color: #a1a1a6;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .header .back-link:hover { color: #f5f5f7; }
+
+    /* Hero */
+    .hero {
+      background: #1d1d1f;
+      padding: 48px 0 64px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 800;
+      color: #f5f5f7;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #a1a1a6;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Content */
+    .content {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    /* Section */
+    .section-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #6e6e73;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #d2d2d7;
+    }
+    .section { margin-bottom: 48px; }
+
+    /* Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    @media (max-width: 768px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 28px; }
+    }
+    @media (max-width: 480px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+
+    /* Card */
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d1d1f;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+    .card-path {
+      font-size: 12px;
+      color: #6e6e73;
+      font-family: 'SF Mono', SFMono-Regular, ui-monospace, monospace;
+    }
+    .card-arrow {
+      font-size: 14px;
+      color: #e63e6d;
+      margin-top: 12px;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 32px;
+      font-size: 12px;
+      color: #7c7c82;
+    }
+    .footer a { color: #7c7c82; text-decoration: none; }
+    .footer a:hover { color: #1d1d1f; }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="https://docs.weltpixel.com/">
+        <span class="logo-text">WeltPixel</span>
+        <span class="logo-sub">Documentation</span>
+      </a>
+      <a class="back-link" href="https://weltpixel.com">&larr; Back to Store</a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>Product Documentation</h1>
+    <p>User guides, configuration instructions, and changelogs for all WeltPixel extensions.</p>
+  </div>
+
+  <main class="content">
+
+    <div class="section">
+      <div class="section-title">Analytics & Tracking</div>
+      <div class="grid">
+        <a class="card" href="GA4/User-Guide-WeltPixel-Google-Analytics-4.html">
+          <div class="card-title">Google Analytics 4 (GA4) with GTM</div>
+          <div class="card-path">GA4/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="SuitePro/User-Guide-WeltPixel-GA4-Social-Marketing-Suite-Pro.html">
+          <div class="card-title">GA4 &amp; Social Marketing Suite PRO</div>
+          <div class="card-path">SuitePro/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="GoogleConsentModeV2/User-Guide-WeltPixel-Google-Consent-Mode-V2.html">
+          <div class="card-title">Google Consent Mode V2</div>
+          <div class="card-path">GoogleConsentModeV2/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="GoogleAutomatedDiscounts/User-Guide-WeltPixel-Google-Automated-Discounts.html">
+          <div class="card-title">Google Automated Discounts</div>
+          <div class="card-path">GoogleAutomatedDiscounts/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">GA4 PRO Addons</div>
+      <div class="grid">
+        <a class="card" href="MetaPixelAddon/User-Guide-WeltPixel-Meta-Pixel-Conversions-API-Addon.html">
+          <div class="card-title">Meta Pixel Conversions API</div>
+          <div class="card-path">MetaPixelAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="TikTokPixelAddon/User-Guide-WeltPixel-TikTok-Pixel-Events-API-Addon.html">
+          <div class="card-title">TikTok Pixel Events API</div>
+          <div class="card-path">TikTokPixelAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="PinterestAddon/User-Guide-WeltPixel-Pinterest-Conversions-API-Addon.html">
+          <div class="card-title">Pinterest Conversions API</div>
+          <div class="card-path">PinterestAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="BingUETAddon/User-Guide-WeltPixel-Microsoft-Ads-Bing-UET-API-Addon.html">
+          <div class="card-title">Microsoft Ads (Bing UET) API</div>
+          <div class="card-path">BingUETAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="SnapchatAddon/User-Guide-WeltPixel-Snapchat-Conversions-API-Addon.html">
+          <div class="card-title">Snapchat Conversions API</div>
+          <div class="card-path">SnapchatAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="RedditPixelAddon/User-Guide-WeltPixel-Reddit-Pixel-Conversions-API-Addon.html">
+          <div class="card-title">Reddit Pixel Conversions API</div>
+          <div class="card-path">RedditPixelAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="TwitterAddon/User-Guide-WeltPixel-Twitter-Ads-Server-Side-Addon.html">
+          <div class="card-title">X (Twitter) Ads Server-Side</div>
+          <div class="card-path">TwitterAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="KlaviyoAddon/User-Guide-WeltPixel-Klaviyo-API-Addon.html">
+          <div class="card-title">Klaviyo API Addon</div>
+          <div class="card-path">KlaviyoAddon/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Theme &amp; Design</div>
+      <div class="grid">
+        <a class="card" href="PearlTheme/User-Guide-WeltPixel-Pearl-Theme-Magento2.html">
+          <div class="card-title">Pearl Theme for Magento 2</div>
+          <div class="card-path">PearlTheme/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="StackFramework/User-Guide-Stack-Framework-Magento2-WeltPixel.html">
+          <div class="card-title">Stack Framework</div>
+          <div class="card-path">StackFramework/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="FullPageScroll/User-Guide-WeltPixel-Full-Page-Scroll-Magento2.html">
+          <div class="card-title">Full Page Scroll</div>
+          <div class="card-path">FullPageScroll/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Catalog &amp; Navigation</div>
+      <div class="grid">
+        <a class="card" href="LayeredNavigation/User-Guide-WeltPixel-Layered-Navigation-Magento2.html">
+          <div class="card-title">Layered Navigation Ajax Filter</div>
+          <div class="card-path">LayeredNavigation/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="MegaMenu/User-Guide-WeltPixel-Mega-Menu-Magento2.html">
+          <div class="card-title">Mega Menu</div>
+          <div class="card-path">MegaMenu/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="AjaxCatalog/User-Guide-WeltPixel-Ajax-Infinite-Scroll-Magento2.html">
+          <div class="card-title">Infinite Scroll &amp; Ajax Catalog</div>
+          <div class="card-path">AjaxCatalog/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="AjaxSearch/User-Guide-WeltPixel-Ajax-Search-Autocomplete-Magento2.html">
+          <div class="card-title">Ajax Search Autocomplete</div>
+          <div class="card-path">AjaxSearch/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="AdvanceCategorySorting/User-Guide-WeltPixel-Advance-Category-Sorting-Magento2.html">
+          <div class="card-title">Advanced Category Sorting</div>
+          <div class="card-path">AdvanceCategorySorting/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="SmartProductTabs/User-Guide-WeltPixel-Smart-Product-Tabs-Magento2.html">
+          <div class="card-title">Smart Custom Product Tabs</div>
+          <div class="card-path">SmartProductTabs/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="ProductLabels/User-Guide-WeltPixel-Product-Labels-Magento2.html">
+          <div class="card-title">Product Labels (New, Sale, Discount)</div>
+          <div class="card-path">ProductLabels/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="QuickViewAjaxCart/User-Guide-WeltPixel-Quick-View-Ajax-Cart-Magento2.html">
+          <div class="card-title">Quick View &amp; Ajax Cart</div>
+          <div class="card-path">QuickViewAjaxCart/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="QuickCart/User-Guide-WeltPixel-Quick-Cart-Magento2.html">
+          <div class="card-title">Quick Cart</div>
+          <div class="card-path">QuickCart/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="RecentlyViewed/User-Guide-WeltPixel-Recently-Viewed-Products-Magento2.html">
+          <div class="card-title">Recently Viewed Products Bar</div>
+          <div class="card-path">RecentlyViewed/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">UX &amp; Conversion</div>
+      <div class="grid">
+        <a class="card" href="OWLCarouselSlider/User-Guide-WeltPixel-Banner-Slider-OWL-Carousel-Magento2.html">
+          <div class="card-title">Banner Slider &amp; OWL Carousel</div>
+          <div class="card-path">OWLCarouselSlider/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="Newsletter/User-Guide-WeltPixel-Newsletter-Popup-Magento2.html">
+          <div class="card-title">Newsletter Popup &amp; Exit Intent</div>
+          <div class="card-path">Newsletter/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="SocialLogin/User-Guide-WeltPixel-Social-Login-Magento2.html">
+          <div class="card-title">Social Login</div>
+          <div class="card-path">SocialLogin/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="AdvancedWishlist/User-Guide-WeltPixel-Multiple-Ajax-Wishlist-Magento2.html">
+          <div class="card-title">Multiple Ajax Wishlist &amp; Share</div>
+          <div class="card-path">AdvancedWishlist/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="ThankYouPage/User-Guide-WeltPixel-Checkout-Success-Page-Magento2.html">
+          <div class="card-title">Checkout Success Page</div>
+          <div class="card-path">ThankYouPage/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="UserProfile/User-Guide-WeltPixel-User-Profile-Magento2.html">
+          <div class="card-title">User Profile</div>
+          <div class="card-path">UserProfile/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="CMSProductReviewsWidget/User-Guide-WeltPixel-CMS-Product-Review-Widget-Magento2.html">
+          <div class="card-title">Product Reviews &amp; Rating Widget</div>
+          <div class="card-path">CMSProductReviewsWidget/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="InstagramWidget/User-Guide-WeltPixel-Instagram-Feed-Widget-Magento2.html">
+          <div class="card-title">Instagram Feed Widget</div>
+          <div class="card-path">InstagramWidget/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">SEO &amp; Performance</div>
+      <div class="grid">
+        <a class="card" href="RichSnippets/User-Guide-WeltPixel-Rich-Snippets-Schema.html">
+          <div class="card-title">Rich Snippets &amp; Schema.org</div>
+          <div class="card-path">RichSnippets/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="SEOPageTitleOverwrite/User-Guide-WeltPixel-SEO-Page-Title-Overwrite-Magento2.html">
+          <div class="card-title">SEO Page Title Overwrite</div>
+          <div class="card-path">SEOPageTitleOverwrite/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="GoogleXMLSitemap/User-Guide-WeltPixel-Google-XML-Sitemap-Magento2.html">
+          <div class="card-title">Google XML Sitemap</div>
+          <div class="card-path">GoogleXMLSitemap/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="SpeedOptimization/User-Guide-WeltPixel-Speed-Optimization-Magento2.html">
+          <div class="card-title">Speed Optimization &amp; JS Bundling</div>
+          <div class="card-path">SpeedOptimization/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="LazyLoading/User-Guide-WeltPixel-LazyLoading-Magento2.html">
+          <div class="card-title">Lazy Load Products &amp; Images</div>
+          <div class="card-path">LazyLoading/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="ProductFeed/User-Guide-WeltPixel-Product-Feed-Magento2.html">
+          <div class="card-title">Product Feed</div>
+          <div class="card-path">ProductFeed/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Operations</div>
+      <div class="grid">
+        <a class="card" href="EnhancedEmail/User-Guide-WeltPixel-Enhanced-Email-Magento2.html">
+          <div class="card-title">Transactional Email Template Editor</div>
+          <div class="card-path">EnhancedEmail/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="CMSBlockScheduler/User-Guide-WeltPixel-CMS-Block-Scheduler-Magento2.html">
+          <div class="card-title">CMS Block Scheduler &amp; Targeting</div>
+          <div class="card-path">CMSBlockScheduler/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="Multistore/User-Guide-WeltPixel-Multi-Store-Multi-Brand-Magento2.html">
+          <div class="card-title">Enhanced Multi-Store Multi-Brand</div>
+          <div class="card-path">Multistore/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+        <a class="card" href="MaxmindFraudPrevention/User-Guide-WeltPixel-Maxmind-Fraud-Prevention-Magento2.html">
+          <div class="card-title">MaxMind Fraud Prevention</div>
+          <div class="card-path">MaxmindFraudPrevention/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Shopify</div>
+      <div class="grid">
+        <a class="card" href="ShopifyCheckout/User-Guide-WeltPixel-Shopify-Checkout.html">
+          <div class="card-title">WeltPixel Shopify Checkout</div>
+          <div class="card-path">ShopifyCheckout/</div>
+          <div class="card-arrow">&rarr;</div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 <a href="https://weltpixel.com">WeltPixel</a> &middot; <a href="https://weltpixel.com/collections/magento-2-extensions">Browse Extensions</a></p>
+  </footer>
+
+</body>
+</html>
