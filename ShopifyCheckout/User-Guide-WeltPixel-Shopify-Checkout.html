@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WeltPixel Shopify Checkout for Adobe Commerce user guide. Learn how to install, configure, and operate the Shopify Checkout handoff module.">
+  <meta name="author" content="">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://www.weltpixel.com/shopify-checkout-for-magento-2.html">
+  <link rel="icon" href="images/favicon.png">
+  <title>WeltPixel Shopify Checkout User Guide</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<body style="font-family: 'Open Sans', sans-serif;">
+  <div id="product">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+          </button>
+          <a class="navbar-brand" href="https://www.weltpixel.com/shopify-checkout-for-magento-2.html" target="_blank">
+            <img src="https://www.weltpixel.com/pub/media/logo/stores/1/WeltPixel_logo_black.svg" alt="weltpixel">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User Guide</a>
+              <ul class="dropdown-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Key Capabilities</a></li>
+                <li><a href="#install">Installation</a></li>
+                <li><a href="#shopify-app">Create Shopify App</a></li>
+                <li><a href="#configure">Configuration</a></li>
+                <li><a href="#troubleshooting">Troubleshooting</a></li>
+              </ul>
+            </li>
+            <li><a href="#change-log">Change Log</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other Extensions</a>
+              <ul class="dropdown-menu">
+                <li><a href="https://www.weltpixel.com/google-analytics-4-ga4-with-gtm-support-for-magento-2.html" target="_blank">Google Analytics 4 PRO</a></li>
+                <li><a href="https://www.weltpixel.com/meta-pixel-server-side-addon.html" target="_blank">Meta Pixel Conversions API</a></li>
+                <li><a href="https://www.weltpixel.com/tiktok-pixel-server-side-addon.html" target="_blank">TikTok Pixel Events API</a></li>
+                <li><a href="https://www.weltpixel.com/reddit-pixel-server-side-addon.html" target="_blank">Reddit Pixel Conversions API</a></li>
+                <li><a href="https://www.weltpixel.com/microsoft-ads-server-side-addon.html" target="_blank">Microsoft Ads API</a></li>
+                <li><a href="https://www.weltpixel.com/x-twitter-ads-server-side-addon.html" target="_blank">X (Twitter) Ads API</a></li>
+                <li><a href="https://www.weltpixel.com/google-automated-discounts.html" target="_blank">Google Automated Discounts</a></li>
+                <li><a href="https://www.weltpixel.com/google-consent-mode-v2.html" target="_blank">Google Consent Mode V2</a></li>
+                <li><a href="https://www.weltpixel.com/product-feed-for-magento-2.html" target="_blank">Product Feed</a></li>
+                <li><a href="https://www.weltpixel.com/magento2-google-rich-cards-free-extension.html" target="_blank">Rich Snippets</a></li>
+                <li><a href="https://www.weltpixel.com/google-xml-sitemap-for-magento-2.html" target="_blank">Google XML Sitemap</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://www.weltpixel.com/shopify-checkout-for-magento-2.html" style="background: #000; color: #fff;">Download</a></li>
+            <li><a href="https://support.weltpixel.com/hc/en-us" target="_blank">Support Knowledge Base</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="product-description">
+      <div class="section clearfix grey first-product-image">
+        <div class="col-sm-6 image">
+          <img src="images/shopify-checkout/shopify-checkout-main.png" class="width-full product-image" alt="WeltPixel Shopify Checkout for Adobe Commerce">
+        </div>
+        <div class="col-sm-6 text">
+          <h2>WeltPixel Shopify Checkout for Adobe Commerce</h2>
+          <p><em>Delegate secure payments to Shopify while Magento keeps full control of catalog, cart, and order lifecycle&mdash;now <strong>FREE</strong> for WeltPixel merchants.</em></p>
+        </div>
+      </div>
+
+      <div class="section clearfix white" id="about">
+        <div class="container container-wide">
+          <div class="jumbotron frame-center white">
+            <h2 class="text-center mb-5">Shopify checkout with a Magento brain</h2>
+            <div class="intro-box">
+              <i class="fa fa-exchange intro-icon"></i>
+              <p>WeltPixel Shopify Checkout pairs Shopify’s high-converting payment experience with the merchandising power of Adobe Commerce.</p>
+            </div>
+            <p>Customers finish their purchase in Shopify’s familiar flow, while your Magento store keeps ownership of products, promotions, and post‑order communications. The handoff feels effortless for shoppers, reliable for your team, and it’s offered <strong>FREE</strong> by WeltPixel. You’ll just need a Shopify store on the <strong>Shopify Grow</strong> plan (or higher) with checkout access to link the two platforms.</p>
+
+            <div class="loom-video-highlight">
+              <div class="loom-video-copy">
+                <span class="loom-video-eyebrow">Watch the experience</span>
+                <h3>See the Shopify checkout handoff in action</h3>
+                <p>Watch a guided tour that demonstrates the shopper handoff to Shopify Checkout, how orders sync back into Magento, and the admin tools that keep everything aligned.</p>
+              </div>
+              <div class="loom-video-frame">
+                <div class="loom-video-aspect">
+                  <!-- Update the Loom ID below if a new walkthrough is published -->
+                  <iframe src="https://www.loom.com/embed/79cc78905c7b4d55ac9bc3ea5088d8a0?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true" title="WeltPixel Shopify Checkout walkthrough" loading="lazy" allow="autoplay; fullscreen; encrypted-media" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="benefits-section">
+              <h4 class="text-center">Why merchants love this FREE add-on</h4>
+              <div class="benefits-grid">
+                <div class="benefit-item">
+                  <i class="fa fa-credit-card"></i>
+                  <h5>Native CTA placement</h5>
+                  <p>Show a “Checkout with Shopify” button right beside Magento’s native options on cart and checkout pages. Prefer a full handoff? Replace Magento’s “Proceed to Checkout” buttons so every click redirects straight to Shopify for a smoother customer journey.</p>
+                </div>
+                <div class="benefit-item">
+                  <i class="fa fa-toggle-on"></i>
+                  <h5>Sandbox &amp; live friendly</h5>
+                  <p>Keep testing and production separate with a simple environment toggle and dedicated credential slots.</p>
+                </div>
+                <div class="benefit-item">
+                  <i class="fa fa-shield"></i>
+                  <h5>Protected handoff</h5>
+                  <p>Securely shares only the details Shopify needs, using encrypted configuration and built-in safeguards.</p>
+                </div>
+                <div class="benefit-item">
+                  <i class="fa fa-line-chart"></i>
+                  <h5>Consistent order flow</h5>
+                  <p>Completed checkouts glide back into Magento, so fulfillment, invoicing, and reporting stay exactly where you expect them.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="workflow-section">
+              <div class="workflow-grid">
+                <div class="workflow-header">
+                  <h4>How the journey feels</h4>
+                  <p>Every touchpoint keeps shoppers confident and your team in control.</p>
+                </div>
+                <div class="journey-cards">
+                  <div class="journey-card">
+                    <div class="journey-icon"><i class="fa fa-shopping-cart"></i></div>
+                    <div class="journey-body">
+                      <h5>Ready to handoff</h5>
+                      <p>The FREE Shopify button displays only when Magento clears the cart, so the option feels intentional.</p>
+                      <ul>
+                        <li>Shoppers keep their Magento cart totals and context.</li>
+                        <li>The CTA hides automatically if an issue needs attention.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="journey-card">
+                    <div class="journey-icon"><i class="fa fa-plug"></i></div>
+                    <div class="journey-body">
+                      <h5>Behind-the-scenes sync</h5>
+                      <p>Quotes convert to Shopify draft orders with matching items, discounts, and customer data.</p>
+                      <ul>
+                        <li>No duplicate product setup inside Shopify.</li>
+                        <li>Sandbox sessions remain clearly flagged for testing.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="journey-card">
+                    <div class="journey-icon"><i class="fa fa-external-link"></i></div>
+                    <div class="journey-body">
+                      <h5>Checkout moment</h5>
+                      <p>Shoppers complete payment on Shopify’s secure page while your Magento store awaits the order confirmation.</p>
+                      <ul>
+                        <li>Familiar Shopify UX boosts trust at no added cost.</li>
+                        <li>Magento remains the system of record for orders once the webhook arrives.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="journey-card">
+                    <div class="journey-icon"><i class="fa fa-refresh"></i></div>
+                    <div class="journey-body">
+                      <h5>Automatic confirmation</h5>
+                      <p>Shopify webhooks—or the FREE cron fallback—notify Magento to create the order and capture payment metadata.</p>
+                      <ul>
+                        <li>Duplicate events are ignored to prevent double orders.</li>
+                        <li>Shopify order IDs are stored for auditing.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="journey-card">
+                    <div class="journey-icon"><i class="fa fa-life-ring"></i></div>
+                    <div class="journey-body">
+                      <h5>Built-in reassurance</h5>
+                      <p>Magento Admin messaging highlights issues, and automated follow-ups re-check pending sessions.</p>
+                      <ul>
+                        <li>CLI and cron commands replay missed Shopify orders.</li>
+                        <li>Staff receive guided messaging when retrying the handoff.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="journey-card">
+                    <div class="journey-icon"><i class="fa fa-cog"></i></div>
+                    <div class="journey-body">
+                      <h5>Magento keeps the lead</h5>
+                      <p>Your invoicing, fulfillment, and loyalty programs continue untouched—Shopify purely handles checkout.</p>
+                      <ul>
+                        <li>Reuse existing shipping, tax, and notification rules.</li>
+                        <li>Magento communications stay consistent for customers.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="workflow-cta">
+                  <h4>Outcome</h4>
+                  <p>Gain Shopify’s frictionless checkout while Magento remains the single source of truth for your business.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix grey section-dark" id="features">
+        <div class="container container-wide">
+          <h2 class="section-title text-center">Key Capabilities</h2>
+          <p class="section-lead text-center">Highlights from the FREE WeltPixel Shopify Checkout module.</p>
+          <div class="feature-section">
+            <div class="feature-row">
+              <div class="feature-copy">
+                <span class="feature-eyebrow">01 · Draft order handoff</span>
+                <h3>Checkout with Shopify while Magento stays in charge</h3>
+                <p>Generate Shopify draft orders on demand using the current Magento quote so customers see familiar products, discounts, and totals when they land on Shopify&rsquo;s checkout.</p>
+                <ul>
+                  <li>One-click “Checkout with Shopify” handoff from cart or checkout.</li>
+                  <li>Mirrored pricing, including discounts and tax, to prevent surprises.</li>
+                  <li>Automatically provisions or reuses Shopify products so checkout can display Magento images and descriptions.</li>
+                  <li>Sandbox &amp; production ready—switch environments without redeploying.</li>
+                </ul>
+              </div>
+              <div class="feature-media">
+                <figure class="feature-media__frame">
+                  <img src="images/shopify-checkout/handoff-overview.png" alt="Illustration of Magento to Shopify checkout handoff">
+                </figure>
+              </div>
+            </div>
+
+            <div class="feature-row feature-row--reverse">
+              <div class="feature-copy">
+                <span class="feature-eyebrow">02 · Shopify Dev Dashboard</span>
+                <h3>Create your custom app in minutes</h3>
+                <p>Follow Shopify&rsquo;s latest Dev Dashboard workflow to provision tokens and secrets with the right Admin API scopes&mdash;no legacy private apps required.</p>
+                <ul>
+                  <li>Step-by-step guidance embedded in the Magento docs.</li>
+                  <li>Stores sandbox and live credentials separately, fully encrypted.</li>
+                  <li>Instant access token rotation without reconfiguring the module.</li>
+                </ul>
+              </div>
+              <div class="feature-media">
+                <figure class="feature-media__frame">
+                  <img src="images/shopify-checkout/shopify-dev-dashboard-app-setup.png" alt="Illustration of Shopify Dev Dashboard app setup">
+                </figure>
+              </div>
+            </div>
+
+            <div class="feature-row">
+              <div class="feature-copy">
+                <span class="feature-eyebrow">03 · Magento Admin controls</span>
+                <h3>Configure credentials and webhooks from one panel</h3>
+                <p>Use the WeltPixel configuration section to toggle the integration, paste credentials, and create or delete Shopify webhooks without leaving Magento.</p>
+                <ul>
+                  <li>Dedicated sandbox and production credential groups.</li>
+                  <li>“Create Shopify Webhook” button registers <code>orders/paid</code> and <code>orders/fulfilled</code> automatically.</li>
+                  <li>Visual confirmation messages keep your team informed.</li>
+                </ul>
+              </div>
+              <div class="feature-media">
+                <figure class="feature-media__frame">
+                  <img src="images/shopify-checkout/magento-configuration-panel.png" alt="Magento configuration screen for Shopify Checkout">
+                </figure>
+              </div>
+            </div>
+
+            <div class="feature-row feature-row--reverse">
+              <div class="feature-copy">
+                <span class="feature-eyebrow">04 · Flexible checkout behavior</span>
+                <h3>Decide how shoppers encounter Shopify Checkout</h3>
+                <p>Keep the standard Magento checkout and add a Shopify button for visibility, or replace Magento&rsquo;s checkout links entirely when you&rsquo;re ready to redirect every shopper.</p>
+                <ul>
+                  <li>Separate button mode keeps Magento checkout intact.</li>
+                  <li>Replace mode reroutes <code>/checkout</code> and “Proceed to Checkout” buttons automatically.</li>
+                  <li>Frontend button logic hides itself if the cart has validation issues.</li>
+                </ul>
+              </div>
+              <div class="feature-media">
+                <figure class="feature-media__frame">
+                  <img src="images/shopify-checkout/checkout-behavior-modes.png" alt="Comparison of checkout behavior options">
+                </figure>
+              </div>
+            </div>
+
+            <div class="feature-row">
+              <div class="feature-copy">
+                <span class="feature-eyebrow">05 · Automation &amp; recovery</span>
+                <h3>Never lose a paid order to a missed webhook</h3>
+                <p>Background jobs and CLI tooling replay Shopify orders, while Magento stores every checkout session in its own table for visibility and auditing.</p>
+                <ul>
+                  <li>Cron job <code>weltpixel_shopify_sync_pending_orders</code> replays outstanding sessions.</li>
+                  <li>CLI command <code>php bin/magento weltpixel:shopify:sync-orders</code> imports individual orders on demand.</li>
+                  <li>Quote metadata table tracks checkout token, status, and environment.</li>
+                </ul>
+              </div>
+              <div class="feature-media">
+                <figure class="feature-media__frame">
+                  <img src="images/shopify-checkout/automation-recovery-toolkit.png" alt="Automation and recovery toolkit illustration">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="info-box info-box--centered info-box--on-dark mt-5">
+            <i class="fa fa-info-circle"></i>
+            <p><strong>Quick tip:</strong> Let customers know they’ll complete payment on Shopify’s secure checkout&mdash;and that you can offer it <strong>FREE</strong> thanks to this integration.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix grey no-padding" id="install">
+        <div class="container">
+          <div class="jumbotron grey">
+            <h2 class="text-center mb-5">How to Install Shopify Checkout (FREE)</h2>
+            <div class="install-steps">
+              <div class="install-step">
+                <div class="install-step-header">
+                  <div class="step-number">1</div>
+                  <h3>Prepare your Magento store</h3>
+                </div>
+                <div class="install-step-content">
+                  <p>Double-check hosting prerequisites:</p>
+                  <ul>
+                    <li>Magento Open Source / Adobe Commerce 2.4.5 or newer</li>
+                    <li>SSH access to copy files into <code>app/code</code></li>
+                    <li>Maintenance window to run the standard upgrade routine</li>
+                    <li>A Shopify store on the Shopify Grow plan (or higher) with Shopify Checkout enabled</li>
+                    <li>Your Shopify admin access token and webhook secret handy</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="install-step">
+                <div class="install-step-header">
+                  <div class="step-number">2</div>
+                  <h3>Get the FREE extension from GitHub</h3>
+                </div>
+                <div class="install-step-content">
+                  <p>The Shopify Checkout extension is Open Source and its files can be found on GitHub:</p>
+                  <div class="command-block">
+                    <code><a href="https://github.com/Weltpixel/magento2-weltpixel-shopify-checkout" target="_blank">https://github.com/Weltpixel/magento2-weltpixel-shopify-checkout</a></code>
+                  </div>
+                  <p>Clone the repository or download the ZIP archive and copy the files into <code>app/code/WeltPixel/ShopifyCheckout</code> alongside the shared <code>app/code/WeltPixel/Backend</code> module. The Backend module provides the licensing UI and admin elements required by several WeltPixel extensions.</p>
+                  <div class="info-box">
+                    <i class="fa fa-info-circle"></i>
+                    <p>This integration is offered <strong>FREE</strong> and <strong>Open Source</strong> so you can leverage Shopify Checkout without subscription costs.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="install-step">
+                <div class="install-step-header">
+                  <div class="step-number">3</div>
+                  <h3>Enable the module</h3>
+                </div>
+                <div class="install-step-content">
+                  <p>From your Magento root, run:</p>
+                  <div class="command-block">
+                    <code>php bin/magento module:enable WeltPixel_Backend WeltPixel_ShopifyCheckout</code>
+                  </div>
+                  <div class="command-block">
+                    <code>php bin/magento setup:upgrade</code>
+                  </div>
+                </div>
+              </div>
+
+              <div class="install-step">
+                <div class="install-step-header">
+                  <div class="step-number">4</div>
+                  <h3>Compile &amp; deploy (production stores)</h3>
+                </div>
+                <div class="install-step-content">
+                  <p>If your site runs in production mode, finish with:</p>
+                  <div class="command-block">
+                    <code>php bin/magento setup:di:compile</code>
+                  </div>
+                  <div class="command-block">
+                    <code>php bin/magento setup:static-content:deploy -f</code>
+                  </div>
+                </div>
+              </div>
+
+              <div class="install-step">
+                <div class="install-step-header">
+                  <div class="step-number">5</div>
+                  <h3>Flush caches &amp; verify</h3>
+                </div>
+                <div class="install-step-content">
+                  <div class="command-block">
+                    <code>php bin/magento cache:flush</code>
+                  </div>
+                  <p>Visit <strong>Stores → Configuration → WeltPixel → Shopify Checkout</strong>, set the environment to Sandbox, add Shopify credentials, and confirm the FREE “Checkout with Shopify” button appears on your storefront.</p>
+                </div>
+              </div>
+
+              <div class="install-step">
+                <div class="install-step-header">
+                  <div class="step-number">6</div>
+                  <h3>Run a test handoff</h3>
+                </div>
+                <div class="install-step-content">
+                  <div class="success-box">
+                    <i class="fa fa-check-circle"></i>
+                    <p>Place a sandbox order to confirm the FREE Shopify Checkout experience works end to end before going live.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix white" id="shopify-app">
+        <div class="container container-wide">
+          <h2 class="section-title text-center">Create Your Shopify App</h2>
+          <p class="section-lead text-center">Follow Shopify&rsquo;s Dev Dashboard flow (the replacement for legacy “Develop apps” pages) to capture the Admin API access token and webhook secret required by the integration.</p>
+
+          <div class="install-steps app-setup-steps">
+            <div class="install-step">
+              <div class="install-step-header">
+                <div class="step-number">1</div>
+                <h3>Open the Dev Dashboard</h3>
+              </div>
+              <div class="install-step-content">
+                <p>Log in to your Shopify admin with a staff account that can manage apps. Navigate to <strong>Settings → Apps and sales channels</strong> and choose <strong>Develop apps</strong>. Shopify now opens the <strong>Dev Dashboard</strong>; if prompted, approve custom app development for the store. This replaces the older “private app” workflow.</p>
+              </div>
+            </div>
+
+            <div class="install-step">
+              <div class="install-step-header">
+                <div class="step-number">2</div>
+                <h3>Create a Dev Dashboard app</h3>
+              </div>
+              <div class="install-step-content">
+                <p>Click <strong>Create app</strong>. Give the app a recognizable name (for example, <em>Magento Shopify Checkout</em>) and choose the app owner. Confirm with <strong>Create app</strong> to land on the new app workspace that features tabs for <em>Overview</em>, <em>App setup</em>, and <em>Configuration</em>.</p>
+              </div>
+            </div>
+
+            <div class="install-step">
+              <div class="install-step-header">
+                <div class="step-number">3</div>
+                <h3>Configure Admin API integration</h3>
+              </div>
+              <div class="install-step-content">
+                <p>Inside the app workspace, open <strong>Configuration → Admin API integration</strong> and click <strong>Configure</strong>. From the Dev Dashboard scope picker, enable the permissions the module relies on:</p>
+                <ul>
+                  <li><code>write_products</code> &mdash; create, update, or archive the dynamic products and upload images.</li>
+                  <li><code>read_products</code> &mdash; read the product and image resources created during syncing.</li>
+                  <li><code>write_draft_orders</code> &mdash; create the draft order that powers the checkout handoff.</li>
+                  <li><code>read_draft_orders</code> &mdash; reload draft orders when reconciling or retrying cron jobs.</li>
+                  <li><code>read_orders</code> &mdash; fetch the final Shopify order when webhooks fail or during audits.</li>
+                </ul>
+                <p>Save your changes when finished.</p>
+              </div>
+            </div>
+
+            <div class="install-step">
+              <div class="install-step-header">
+                <div class="step-number">4</div>
+                <h3>Install the app to your store</h3>
+              </div>
+              <div class="install-step-content">
+                <p>Return to <strong>Overview</strong> (or use the banner in Configuration) and select <strong>Install app</strong>. Approve the Dev Dashboard install prompt so the app gains access to your store data.</p>
+              </div>
+            </div>
+
+            <div class="install-step">
+              <div class="install-step-header">
+                <div class="step-number">5</div>
+                <h3>Generate the Admin API access token</h3>
+              </div>
+              <div class="install-step-content">
+                <p>From <strong>Configuration → Admin API integration</strong>, expand the <strong>Access tokens</strong> panel and click <strong>Reveal token once</strong>. Copy the Admin API access token into a secure password manager immediately&mdash;Shopify only shows it this one time. Paste it into Magento&rsquo;s <strong>Admin Access Token</strong> field when you configure the module.</p>
+                <div class="info-box">
+                  <i class="fa fa-key"></i>
+                  <p>In the same view, expand <strong>App credentials</strong> and copy the <strong>API secret key</strong>. Magento uses this value as the “Webhook Shared Secret” to validate Shopify&rsquo;s <code>X-Shopify-Hmac-Sha256</code> header.</p>
+                </div>
+                <p>Keep both values safe; Shopify only shows the access token once.</p>
+              </div>
+            </div>
+
+            <div class="install-step">
+              <div class="install-step-header">
+                <div class="step-number">6</div>
+                <h3>Prepare for webhook creation</h3>
+              </div>
+              <div class="install-step-content">
+                <p>You do not need to create webhooks manually in the Dev Dashboard. After you paste the credentials into Magento, click the <strong>Create Shopify Webhook</strong> button in the module configuration. Magento registers the <code>orders/paid</code> and <code>orders/fulfilled</code> endpoints against your Dev Dashboard app automatically.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-box mt-5">
+            <i class="fa fa-lightbulb-o"></i>
+            <p>Need to rotate credentials later? Open the Dev Dashboard again, select your app, issue a new Admin API access token from <strong>Configuration → Admin API integration</strong>, and update Magento&rsquo;s settings before clicking the webhook button.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix white" id="configure">
+        <div class="container container-wide">
+          <h2 class="section-title text-center">Configuration</h2>
+          <p class="section-lead text-center">A short tour of the key settings so you can tailor the experience to your store.</p>
+
+          <div class="config-section">
+            <div class="config-header">
+              <i class="fa fa-plug"></i>
+              <h4>Connect your Shopify store</h4>
+            </div>
+            <div class="config-content">
+              <div class="config-grid">
+                <div class="config-grid-item">
+                  <p class="config-path"><i class="fa fa-location-arrow"></i> Magento Admin → Stores → Configuration → WeltPixel → Shopify Checkout</p>
+                  <div class="setting-group">
+                    <div class="setting-item">
+                      <h5><i class="fa fa-toggle-on"></i> Enable the Shopify button</h5>
+                      <p>Switch on the module when you’re ready for customers to see the new option in cart and checkout.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-id-badge"></i> Add your Shopify details</h5>
+                      <p>Enter the <strong>Shopify Store Domain</strong> (for example, <code>mystore.myshopify.com</code>), <strong>Admin Access Token</strong>, and <strong>Webhook Shared Secret</strong> in the Sandbox credentials group first so you can test with confidence.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-picture-o"></i> Create product in Shopify to use image on checkout</h5>
+                      <p>This toggle defaults to <strong>Yes</strong> so Shopify checkout can include the Magento product image. Shopify needs an associated product record, so the module automatically creates the item (and reuses it later) to supply images and other product details.</p>
+                      <p>Set it to <strong>No</strong> if you want to skip product creation in Shopify; the checkout will still load, but product images from Magento won’t appear.</p>
+                      <br>
+                      <p class="setting-note"><em><strong>Heads-up:</strong> the first time Shopify has to create products, checkout can take a moment longer—especially for carts with several new items. Once those products exist, repeat orders load much faster because Shopify instantly reuses them.</em></p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-shield"></i> Understand the webhook secret</h5>
+                      <p>The shared secret powers Shopify’s <code>X-Shopify-Hmac-Sha256</code> signature and is required for Magento to trust incoming <code>orders/paid</code> and <code>orders/fulfilled</code> events.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-save"></i> Save and refresh</h5>
+                      <p>Click Save Config to store the credentials securely. Magento encrypts everything for you.</p>
+                    </div>
+                  </div>
+                  <div class="info-box info-box--inline">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <p><strong>Tip:</strong> Keep your Shopify admin open while configuring so you can quickly copy any updated keys.</p>
+                  </div>
+                </div>
+                <div class="config-grid-item">
+                  <div class="config-placeholder">
+                    <i class="fa fa-window-maximize"></i>
+                    <span>Configuration overview</span>
+                    <p>Sandbox mode is perfect for rehearsal. Gather live credentials only when your team is ready for launch.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="config-section">
+            <div class="config-header">
+              <i class="fa fa-random"></i>
+              <h4>Switch between Sandbox and Production</h4>
+            </div>
+            <div class="config-content">
+              <div class="config-grid">
+                <div class="config-grid-item">
+                  <div class="setting-group">
+                    <div class="setting-item">
+                      <h5><i class="fa fa-exchange"></i> Choose the active environment</h5>
+                      <p>Use the dropdown to tell Magento which credential set to use. Leave it on Sandbox until every handoff test feels great.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-refresh"></i> Refresh Shopify webhooks</h5>
+                      <p>After saving, click the “Create Shopify Webhook” button under the Sandbox or Production credential set. Magento registers <code>orders/paid</code> and <code>orders/fulfilled</code> callbacks that point to <code>/shopifycheckout/webhook/order</code>.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-trash"></i> Remove old links when rotating keys</h5>
+                      <p>Use the matching “Delete Shopify Webhook” button before swapping credentials so you know only the active environment is allowed to reach Magento.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-bell"></i> Watch for confirmation messages</h5>
+                      <p>Success and error messages appear in the admin interface so you know everything is linked correctly.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="config-grid-item">
+                  <div class="config-placeholder">
+                    <i class="fa fa-shield"></i>
+                    <span>Stay in control</span>
+                    <p>Rotate your Shopify keys with confidence—re-run the webhook button anytime you make a change.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="config-section">
+            <div class="config-header">
+              <i class="fa fa-pencil"></i>
+              <h4>Personalize the checkout experience</h4>
+            </div>
+            <div class="config-content">
+              <div class="config-grid">
+                <div class="config-grid-item">
+                  <div class="setting-group">
+                    <div class="setting-item">
+                      <h5><i class="fa fa-random"></i> Decide how checkout buttons behave</h5>
+                      <p>Set <strong>Proceed to Checkout Behavior</strong> to either keep Magento’s native checkout and add a separate Shopify button, or replace every “Proceed to Checkout” link with the Shopify redirect. Replacement mode also reroutes direct visits to <code>/checkout</code> so shoppers never miss the handoff.</p>
+                      <ul>
+                        <li><strong>Button display on cart page</strong>: Adds the Shopify button to cart and checkout summaries while leaving Magento checkout intact.</li>
+                        <li><strong>Replace Magento checkout buttons with Shopify redirect</strong>: Hides the extra button and points Magento’s primary checkout links to Shopify automatically.</li>
+                      </ul>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-comments"></i> Set expectations</h5>
+                      <p>If you keep the separate Shopify button, add a short note on your cart or checkout page so shoppers know payment finishes on Shopify.</p>
+                    </div>
+                    <div class="setting-item">
+                      <h5><i class="fa fa-eye"></i> Preview on desktop and mobile</h5>
+                      <p>Confirm the button spacing and messaging look great on the screens your shoppers use most.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="config-grid-item">
+                  <div class="config-placeholder">
+                    <i class="fa fa-smile-o"></i>
+                    <span>Make it yours</span>
+                    <p>Consistent messaging reassures shoppers that the Shopify step is intentional and secure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix grey section-dark" id="operations">
+        <div class="container container-wide">
+          <h2 class="section-title text-center">After setup</h2>
+          <div class="after-grid">
+            <div class="journey-card">
+              <div class="journey-card__icon"><i class="fa fa-plug"></i></div>
+              <p class="journey-card__title">Ready to handoff</p>
+              <p class="journey-card__text">The FREE Shopify button only displays when Magento clears the cart, so the option feels intentional.</p>
+              <ul class="journey-card__list">
+                <li>Shoppers keep their Magento cart totals and context.</li>
+                <li>The CTA hides automatically if the cart needs attention.</li>
+              </ul>
+              <span class="journey-card__footer">Cart moment</span>
+            </div>
+            <div class="journey-card">
+              <div class="journey-card__icon"><i class="fa fa-random"></i></div>
+              <p class="journey-card__title">Behind-the-scenes sync</p>
+              <p class="journey-card__text">Quotes convert to Shopify draft orders with matching items, discounts, and customer data.</p>
+              <ul class="journey-card__list">
+                <li>No duplicate product setup inside Shopify.</li>
+                <li>Sandbox sessions remain clearly flagged for testing.</li>
+              </ul>
+              <span class="journey-card__footer">Draft order</span>
+            </div>
+            <div class="journey-card">
+              <div class="journey-card__icon"><i class="fa fa-sign-in"></i></div>
+              <p class="journey-card__title">Checkout moment</p>
+              <p class="journey-card__text">Shoppers complete payment on Shopify’s secure page, and Magento records the order as soon as Shopify confirms it.</p>
+              <ul class="journey-card__list">
+                <li>Familiar Shopify UX boosts trust at no added cost.</li>
+                <li>Magento remains the system of record once the order syncs back.</li>
+              </ul>
+              <span class="journey-card__footer">Payment</span>
+            </div>
+            <div class="journey-card">
+              <div class="journey-card__icon"><i class="fa fa-refresh"></i></div>
+              <p class="journey-card__title">Automatic confirmation</p>
+              <p class="journey-card__text">Shopify webhooks—or the cron fallback—notify Magento to create the order and capture payment metadata.</p>
+              <ul class="journey-card__list">
+                <li>Duplicate events are ignored to prevent double orders.</li>
+                <li>Shopify order IDs are stored for auditing.</li>
+              </ul>
+              <span class="journey-card__footer">Order sync</span>
+            </div>
+            <div class="journey-card">
+              <div class="journey-card__icon"><i class="fa fa-life-ring"></i></div>
+              <p class="journey-card__title">Built-in reassurance</p>
+              <p class="journey-card__text">Magento Admin messaging highlights issues, and automated follow-ups re-check pending sessions.</p>
+              <ul class="journey-card__list">
+                <li>CLI and cron commands replay missed Shopify orders.</li>
+                <li>Staff get guided messaging when retrying the handoff.</li>
+              </ul>
+              <span class="journey-card__footer">Operations</span>
+            </div>
+            <div class="journey-card">
+              <div class="journey-card__icon"><i class="fa fa-cog"></i></div>
+              <p class="journey-card__title">Magento keeps the lead</p>
+              <p class="journey-card__text">Your invoicing, fulfillment, and loyalty programs continue untouched—Shopify purely handles checkout.</p>
+              <ul class="journey-card__list">
+                <li>Reuse existing shipping, tax, and notification rules.</li>
+                <li>Magento communications stay consistent for customers.</li>
+              </ul>
+              <span class="journey-card__footer">Business control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix white" id="troubleshooting">
+        <div class="container">
+          <h2 class="section-title text-center">Troubleshooting &amp; FAQs</h2>
+          <div class="faq-accordion">
+            <div class="faq-accordion__item">
+              <button class="faq-accordion__trigger" aria-expanded="false">
+                <span>The button is missing or disabled.</span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <div class="faq-accordion__panel" hidden>
+                <p>Make sure the module is enabled, the environment is set to Sandbox or Production, and the cart has no validation issues. If you selected the “replace checkout buttons” behavior, the standalone Shopify button hides on purpose&mdash;Magento’s default checkout link now redirects to Shopify instead.</p>
+              </div>
+            </div>
+            <div class="faq-accordion__item">
+              <button class="faq-accordion__trigger" aria-expanded="false">
+                <span>Shoppers see an error when trying to continue.</span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <div class="faq-accordion__panel" hidden>
+                <p>Double-check that the Shopify store domain matches the format <code>yourstore.myshopify.com</code>, the admin token is still active, and the webhook secret was copied correctly. After saving, click “Create Shopify Webhook” for the active environment to refresh the connection; Magento logs any API errors under <code>var/log</code> with a “Shopify” prefix if retries are needed.</p>
+              </div>
+            </div>
+            <div class="faq-accordion__item">
+              <button class="faq-accordion__trigger" aria-expanded="false">
+                <span>Orders aren’t showing up in Magento.</span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <div class="faq-accordion__panel" hidden>
+                <p>Confirm that <code>orders/paid</code> and <code>orders/fulfilled</code> webhooks exist for the active environment and point to your Magento URL. If they look correct, run <code>php bin/magento cron:run</code> or the replay command <code>php bin/magento weltpixel:shopify:sync-orders --order-id=&lt;SHOPIFY_ORDER_ID&gt;</code> to import the sale from Shopify. You can also review the matching quote entry in <code>weltpixel_shopifycheckout_quote</code> for status clues.</p>
+              </div>
+            </div>
+            <div class="faq-accordion__item">
+              <button class="faq-accordion__trigger" aria-expanded="false">
+                <span>Totals look slightly different.</span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <div class="faq-accordion__panel" hidden>
+                <p>Shopify displays tax and shipping in its own layout. Let customers know they’re seeing the same final amount they approved in Magento and add clarification messaging if needed.</p>
+              </div>
+            </div>
+            <div class="faq-accordion__item">
+              <button class="faq-accordion__trigger" aria-expanded="false">
+                <span>Can I issue refunds from Magento?</span>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+              <div class="faq-accordion__panel" hidden>
+                <p>Refunds are currently handled separately in Shopify and Magento. Process the refund in both systems so inventory and financial records stay aligned.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section clearfix grey" id="change-log">
+        <div class="container">
+          <h2 class="section-title text-center">Change Log</h2>
+          <div class="version-list">
+            <div class="version-item">
+              <div class="version-header">
+                <span class="version-number">v1.16.0</span>
+                <span class="version-date">January 7, 2026</span>
+              </div>
+              <div class="version-changes">
+                <div class="change-type">
+                  <div class="change-list">
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span style="display: inline;"><strong>Giving back:</strong> As a celebration of over 10 years of activity within the Magento 2 ecosystem, and as a way to give back to the community, a number of WeltPixel extensions (both FREE and paid) have officially gone fully Open Source via public Github repositories. Find the full list on <a href="https://github.com/weltpixel" target="_blank" style="display: inline; color: #4CAF50;">Github</a>.</span>
+                      </div>
+                    </div>
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span style="display: inline;">This extension has moved to a fully Open Source model and is available publicly on Github. See the link in the Change Log entry above to find it.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="version-item">
+              <div class="version-header">
+                <span class="version-number">v1.0.0</span>
+                <span class="version-date">October 2025</span>
+              </div>
+              <div class="version-changes">
+                <div class="change-type">
+                  <h5>What’s included</h5>
+                  <div class="change-list">
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span>“Checkout with Shopify” button on cart and checkout pages with a guided handoff experience&mdash;available FREE for WeltPixel merchants.</span>
+                      </div>
+                    </div>
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span>Admin configuration that separates sandbox and production credentials with secure storage.</span>
+                      </div>
+                    </div>
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span>Automatic mirror of cart details in Shopify so customers see familiar totals.</span>
+                      </div>
+                    </div>
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span>Order confirmations flow back into Magento instantly, preventing duplicates and keeping fulfillment on track.</span>
+                      </div>
+                    </div>
+                    <div class="change-item">
+                      <div class="change-header">
+                        <i class="fa fa-plus-circle"></i>
+                        <span>Magento Admin tools for refreshing Shopify notifications and highlighting any handoff issues.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const triggers = document.querySelectorAll('.faq-accordion__trigger');
+
+    triggers.forEach(function (button) {
+      button.addEventListener('click', function () {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        const icon = button.querySelector('i');
+
+        triggers.forEach(function (other) {
+          if (other !== button) {
+            other.setAttribute('aria-expanded', 'false');
+            const sibling = other.nextElementSibling;
+            if (sibling) {
+              sibling.hidden = true;
+            }
+            const otherIcon = other.querySelector('i');
+            if (otherIcon) {
+              otherIcon.classList.remove('fa-minus');
+              otherIcon.classList.add('fa-plus');
+            }
+          }
+        });
+
+        button.setAttribute('aria-expanded', String(!expanded));
+        const panel = button.nextElementSibling;
+        if (panel) {
+          panel.hidden = expanded;
+        }
+
+        if (icon) {
+          if (expanded) {
+            icon.classList.remove('fa-minus');
+            icon.classList.add('fa-plus');
+          } else {
+            icon.classList.remove('fa-plus');
+            icon.classList.add('fa-minus');
+          }
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
