@@ -1,0 +1,271 @@
+{
+  "framework_bundles" : {
+    "WeltPixel_FrameworkEssential" : {
+      "modules" : [
+        {
+          "name" : "WeltPixel_AjaxInfiniteScroll"
+        },
+        {
+          "name" : "WeltPixel_Backend"
+        },
+        {
+          "name" : "WeltPixel_FullPageScroll"
+        },
+        {
+          "name" : "WeltPixel_GoogleCards"
+        },
+        {
+          "name" : "WeltPixel_GoogleCards_Free"
+        },
+        {
+          "name" : "WeltPixel_GoogleTagManager_Free"
+        },
+        {
+          "name" : "WeltPixel_InstagramWidget"
+        },
+        {
+          "name" : "WeltPixel_LazyLoading"
+        },
+        {
+          "name" : "WeltPixel_LazyLoading_Free"
+        },
+        {
+          "name" : "WeltPixel_MobileDetect"
+        },
+        {
+          "name" : "WeltPixel_Multistore"
+        },
+        {
+          "name" : "WeltPixel_NavigationLinks"
+        },
+        {
+          "name" : "WeltPixel_OwlCarouselSlider"
+        },
+        {
+          "name" : "WeltPixel_OwlCarouselSlider_Free"
+        },
+        {
+          "name" : "WeltPixel_QuickCart"
+        },
+        {
+          "name" : "WeltPixel_Quickview"
+        },
+        {
+          "name" : "WeltPixel_Quickview_Free"
+        },
+        {
+          "name" : "WeltPixel_ReviewsWidget"
+        },
+        {
+          "name" : "WeltPixel_SearchAutoComplete"
+        },
+        {
+          "name" : "WeltPixel_Sitemap"
+        },
+        {
+          "name" : "WeltPixel_SmartProductTabs"
+        },
+        {
+          "name" : "WeltPixel_ThankYouPage"
+        },
+        {
+          "name" : "WeltPixel_TitleRewrite"
+        },
+        {
+          "name" : "WeltPixel_LayeredNavigation_Free"
+        },
+        {
+          "name" : "WeltPixel_Newsletter_Free"
+        },
+        {
+          "name" : "WeltPixel_AdvanceCategorySorting"
+        },
+        {
+          "name" : "WeltPixel_ProductLabels"
+        },
+        {
+          "name" : "WeltPixel_SocialLogin_Free"
+        },
+        { 
+          "name" : "WeltPixel_AdvancedWishlist_Free"
+       	},
+        {
+          "name" : "WeltPixel_SpeedOptimization"
+        }
+      ]
+    },
+    "WeltPixel_FrameworkPro" : {
+      "modules" : [
+        {
+          "name" : "WeltPixel_AjaxInfiniteScroll"
+        },
+        {
+          "name" : "WeltPixel_Backend"
+        },
+        {
+          "name" : "WeltPixel_FullPageScroll"
+        },
+        {
+          "name" : "WeltPixel_GoogleCards"
+        },
+        {
+          "name" : "WeltPixel_GoogleCards_Free"
+        },
+        {
+          "name" : "WeltPixel_GoogleTagManager"
+        },
+        {
+          "name" : "WeltPixel_GoogleTagManager_Free"
+        },
+        {
+          "name" : "WeltPixel_InstagramWidget"
+        },
+        {
+          "name" : "WeltPixel_LazyLoading"
+        },
+        {
+          "name" : "WeltPixel_LazyLoading_Free"
+        },
+        {
+          "name" : "WeltPixel_MobileDetect"
+        },
+        {
+          "name" : "WeltPixel_Multistore"
+        },
+        {
+          "name" : "WeltPixel_NavigationLinks"
+        },
+        {
+          "name" : "WeltPixel_OwlCarouselSlider"
+        },
+        {
+          "name" : "WeltPixel_OwlCarouselSlider_Free"
+        },
+        {
+          "name" : "WeltPixel_QuickCart"
+        },
+        {
+          "name" : "WeltPixel_Quickview"
+        },
+        {
+          "name" : "WeltPixel_Quickview_Free"
+        },
+        {
+          "name" : "WeltPixel_ReviewsWidget"
+        },
+        {
+          "name" : "WeltPixel_SearchAutoComplete"
+        },
+        {
+          "name" : "WeltPixel_Sitemap"
+        },
+        {
+          "name" : "WeltPixel_SmartProductTabs"
+        },
+        {
+          "name" : "WeltPixel_ThankYouPage"
+        },
+        {
+          "name" : "WeltPixel_TitleRewrite"
+        },
+        {
+          "name" : "WeltPixel_EnhancedEmail"
+        },
+        {
+          "name" : "WeltPixel_LayeredNavigation_Free"
+        },
+        {
+          "name" : "WeltPixel_LayeredNavigation"
+        },
+        {
+          "name" : "WeltPixel_CmsBlockScheduler"
+        },
+        {
+          "name" : "WeltPixel_Newsletter"
+        },
+        {
+          "name" : "WeltPixel_Newsletter_Free"
+        },
+        {
+          "name" : "WeltPixel_AdvanceCategorySorting"
+        },
+        {
+          "name" : "WeltPixel_ProductLabels"
+        },
+        {
+          "name" : "WeltPixel_RecentlyViewedBar"
+        },
+        {
+          "name" : "WeltPixel_SocialLogin_Free"
+        },
+        {
+          "name" : "WeltPixel_SocialLogin"
+        },
+        { 
+          "name" : "WeltPixel_AdvancedWishlist_Free"
+       	},
+	{
+          "name" : "WeltPixel_AdvancedWishlist"
+        },
+	{
+          "name" : "WeltPixel_UserProfile"
+        },
+        {
+          "name" : "WeltPixel_SpeedOptimization"
+        },
+        {
+          "name" : "WeltPixel_GA4"
+        },
+        {
+          "name" : "WeltPixel_GA4_Free"
+        }
+      ]
+    },
+    "WeltPixel_SuitePro": {
+      "modules" : [
+        {
+          "name" : "WeltPixel_GA4_Pro"
+        },
+        {
+          "name" : "WeltPixel_GA4MetaSS"
+        },
+        {
+          "name" : "WeltPixel_GA4TikTokSS"
+        },
+        {
+          "name" : "WeltPixel_GA4RedditSS"
+        },
+        {
+          "name" : "WeltPixel_GA4BingSS"
+        },
+        {
+          "name" : "WeltPixel_GA4TwitterSS"
+        },
+        {
+          "name" : "WeltPixel_GA4KlaviyoSS"
+        },
+        {
+          "name" : "WeltPixel_GA4PinterestSS"
+        },
+        {
+          "name" : "WeltPixel_GA4SnapchatSS"
+        },
+        {
+          "name" : "WeltPixel_GoogleAutomatedDiscounts"
+        },
+        {
+          "name" : "WeltPixel_GoogleConsentModeV2"
+        },
+        {
+          "name" : "WeltPixel_ProductFeed"
+        },
+        {
+          "name" : "WeltPixel_GoogleCards"
+        },
+        {
+          "name" : "WeltPixel_Sitemap"
+        }
+      ]
+    }
+  }
+}

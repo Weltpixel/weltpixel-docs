@@ -1,0 +1,451 @@
+{
+  "modules": {
+    "WeltPixel_AdvanceCategorySorting": {
+      "name": "WeltPixel Advance Category Sorting",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_AjaxInfiniteScroll": {
+      "name": "Ajax Catalog and Infinite Scroll",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_Backend": {
+      "name": "Backend",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": true
+    },
+    "WeltPixel_CategoryPage": {
+      "name": "Category Page",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_Command": {
+      "name": "Command",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_CustomFooter": {
+      "name": "Custom Footer",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_CustomHeader": {
+      "name": "Custom Header",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_DesignElements": {
+      "name": "Design Elements",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_FrontendOptions": {
+      "name": "Frontend Options",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_FullPageScroll": {
+      "name": "Full Page Scroll",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_GoogleCards": {
+      "name": "Rich Snippets & Cards PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GoogleCards_Free": {
+      "name": "Rich Snippets & Cards",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_GoogleTagManager": {
+      "name": "Google Analytics Enhanced Ecommerce PRO",
+      "version": "1.15.3",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_GoogleTagManager_Free": {
+      "name": "Google Analytics Enhanced Ecommerce",
+      "version": "1.15.3",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_GA4": {
+      "name": "Google Analytics 4 Ecommerce",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4_Free": {
+      "name": "Google Analytics 4 Ecommerce",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_GA4_Pro": {
+      "name": "Google Analytics 4 Ecommerce Pro",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4MetaSS": {
+      "name": "Meta Pixel Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4TikTokSS": {
+      "name": "TikTok Pixel Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4RedditSS": {
+      "name": "Reddit Pixel Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4BingSS": {
+      "name": "Bing UET Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4TwitterSS": {
+      "name": "X (Twitter) Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4KlaviyoSS": {
+      "name": "Klaviyo Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4PinterestSS": {
+      "name": "Pinterest Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4SnapchatSS": {
+      "name": "Snapchat Server-Side Addon for Google Analytics 4",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GA4AttentiveSS": {
+      "name": "Attentive Server-Side Addon for Google Analytics 4",
+      "version": "1.10.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GoogleAutomatedDiscounts": {
+      "name": "Google Automated Discounts",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_GoogleConsentModeV2": {
+      "name": "Google Consent Mode V2",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_InstagramWidget": {
+      "name": "Instagram Widget Advanced",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_LazyLoading": {
+      "name": "Lazy Load PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_LazyLoading_Free": {
+      "name": "Lazy Load Enhanced",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_MobileDetect": {
+      "name": "Mobile Detect",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": true
+    },
+    "WeltPixel_Multistore": {
+      "name": "Enhanced Multi Store",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_NavigationLinks": {
+      "name": "Mega Menu",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_OwlCarouselSlider": {
+      "name": "Responsive Banner Slider and OWL Carousel PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_OwlCarouselSlider_Free": {
+      "name": "Responsive Banner Slider and OWL Carousel",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_ProductPage": {
+      "name": "Product Page",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_QuickCart": {
+      "name": "Quick Cart",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Quickview": {
+      "name": "Advance Product Quick View & Ajax Cart PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Quickview_Free": {
+      "name": "Advance Product Quick View & Ajax Cart",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_ReviewsWidget": {
+      "name": "CMS Product Reviews Widget",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_SampleData": {
+      "name": "Sample Data",
+      "version": "1.16.0",
+      "theme_module": true,
+      "is_free": false
+    },
+    "WeltPixel_SearchAutoComplete": {
+      "name": "Ajax Search Autocomplete",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_Sitemap": {
+      "name": "Google XML Sitemap",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_SmartProductTabs": {
+      "name": "Smart Product Tabs",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_ThankYouPage": {
+      "name": "Custom Thank You Page",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_TitleRewrite": {
+      "name": "SEO Page Title Overwrite",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_EnhancedEmail": {
+      "name": "Email Template Editor",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Maxmind": {
+      "name": "Maxmind Fraud Prevention",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_CmsBlockScheduler": {
+      "name": "CMS Block Scheduler",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_LazyLoadingOwlCarouselSlider": {
+      "name": "Lazy Load Enhanced & OWL Carousel & Slider Merger",
+      "version": "1.0.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_LayeredNavigation": {
+      "name": "Enhanced Layered Navigation PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_LayeredNavigation_Free": {
+      "name": "Enhanced Layered Navigation",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_Newsletter": {
+      "name": "Enhanced Newsletter Popup PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Newsletter_Free": {
+      "name": "Enhanced Newsletter Popup",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_ProductLabels": {
+      "name": "Product Labels",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_ProductFeed": {
+      "name": "Product Feed",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_RecentlyViewedBar": {
+      "name": "Advanced Recently Viewed Bar",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_SocialLogin": {
+      "name": "Social Login PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_SocialLogin_Free": {
+      "name": "Social Login",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_AdvancedWishlist": {
+      "name": "Multiple Ajax Wishlist PRO",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_AdvancedWishlist_Free": {
+      "name": "Multiple Ajax Wishlist",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_UserProfile": {
+      "name": "User Profile",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_SpeedOptimization": {
+      "name": "Speed Optimization",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_FrameworkEssential": {
+      "name": "Stack Framework for Magento 2 Essential Pack",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_FrameworkPro": {
+      "name": "Stack Framework for Magento 2 Professional Pack",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_SuitePro": {
+      "name": "Magento 2 Google Analytics & Social Marketing Suite PRO",
+      "version": "1.16.1",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Pearl": {
+      "name": "Pearl Theme",
+      "version": "101.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Pearl_Startup": {
+      "name": "Pearl Theme for Magento 2 Startup Pack",
+      "version": "101.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Pearl_Essential": {
+      "name": "Pearl Theme For Magento 2 Essential Pack",
+      "version": "101.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeltPixel_Pearl_Professional": {
+      "name": "Pearl Theme For Magento 2 Professional Pack",
+      "version": "101.16.0",
+      "theme_module": false,
+      "is_free": false
+    },
+    "WeSupply_Toolbox": {
+      "name": "WeSupply Toolbox",
+      "version": "1.12.14",
+      "theme_module": false
+    },
+    "WeltPixel_ShopifyCheckout": {
+      "name": "Shopify Checkout Integration",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    },
+    "WeltPixel_ShopifyCheckout_Free": {
+      "name": "Shopify Checkout Integration",
+      "version": "1.16.0",
+      "theme_module": false,
+      "is_free": true
+    }
+  },
+  "themes": {
+    "Pearl": "101.16.0",
+    "Pearl custom": "101.16.0"
+  }
+}
