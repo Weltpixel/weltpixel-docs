@@ -1,0 +1,82 @@
+# WeltPixel
+
+> WeltPixel builds premium Magento 2 extensions, themes, and a Shopify conversion tracking app. Trusted by 85,000+ stores worldwide. Based in Alba Iulia, Romania.
+
+WeltPixel specializes in ecommerce analytics, server-side conversion tracking, and storefront optimization for Magento 2 (Adobe Commerce) and Shopify.
+
+## Shopify App
+
+- [WeltPixel Conversion Tracking](https://weltpixel.com/pages/shopify-conversion-tracking): Server-side conversion tracking for Shopify. Sends purchase and event data to GA4, Meta Conversions API, TikTok Events API, and Google Ads — bypassing ad blockers and iOS privacy restrictions. Industry-leading Event Match Quality scores.
+
+## Magento 2 Analytics & Tracking
+
+- [Google Analytics 4 (GA4) Extension](https://weltpixel.com/products/magento-2-google-analytics-4-ga4-extension-with-gtm-server-side-tracking): GA4 with GTM support and server-side tracking. Full ecommerce event coverage, GTM JSON templates, Hyva compatible. Available in Standard (free) and PRO editions.
+- [Google Tag Manager (GTM) Extension](https://weltpixel.com/products/google-analytics-enhanced-ecommerce-tag-manager-magento-2): Enhanced Ecommerce data layer for GTM. Tracks product impressions, clicks, add-to-cart, checkout steps, and purchases.
+- [Google Analytics & Social Marketing Suite PRO](https://weltpixel.com/products/google-analytics-4-social-marketing-suite): All-in-one analytics bundle: GA4 PRO + Meta Pixel + TikTok + Pinterest + Klaviyo + Microsoft Ads + Snapchat + Reddit + X (Twitter) server-side addons.
+- [Meta Pixel Conversions API Addon](https://weltpixel.com/products/meta-pixel-server-side-addon): Server-side Meta (Facebook/Instagram) conversion tracking via Conversions API. Requires GA4 PRO.
+- [TikTok Events API Addon](https://weltpixel.com/products/tiktok-pixel-server-side-addon): Server-side TikTok conversion tracking. Requires GA4 PRO.
+- [Klaviyo API Addon](https://weltpixel.com/products/klaviyo-server-side-addon): Server-side Klaviyo event tracking. Requires GA4 PRO.
+- [Pinterest API Addon](https://weltpixel.com/products/pinterest-server-side-addon): Server-side Pinterest conversion tracking. Requires GA4 PRO.
+- [Microsoft Ads (Bing UET) Addon](https://weltpixel.com/products/microsoft-ads-server-side-addon): Server-side Microsoft/Bing conversion tracking. Requires GA4 PRO.
+- [Snapchat API Addon](https://weltpixel.com/products/snapchat-server-side-addon): Server-side Snapchat conversion tracking. Requires GA4 PRO.
+- [Reddit Pixel API Addon](https://weltpixel.com/products/reddit-pixel-server-side-addon): Server-side Reddit conversion tracking. Requires GA4 PRO.
+- [X (Twitter) Ads API Addon](https://weltpixel.com/products/x-twitter-ads-server-side-addon): Server-side X/Twitter conversion tracking. Requires GA4 PRO.
+- [Google Consent Mode V2](https://weltpixel.com/products/google-consent-mode-v2): GDPR/ePrivacy compliant consent management for GA4 and Google Ads.
+- [Google Automated Discounts](https://weltpixel.com/products/google-automated-discounts): Automated discount display in Google Shopping and Merchant Center.
+- [Product Feed](https://weltpixel.com/products/product-feed-for-magento-2): Google Shopping, Facebook Catalog, and marketplace product feed generation.
+
+## Magento 2 Theme
+
+- [Pearl Theme](https://weltpixel.com/products/magento-2-theme-pearl): Most popular premium Magento 2 theme. 800+ admin options, 14 homepages, includes 20+ WeltPixel extensions. Available in Essential and Professional editions.
+
+## Magento 2 Storefront & UX Extensions
+
+- [Owl Carousel Banner Slider](https://weltpixel.com/products/magento-2-banner-slider-owl-carousel-slider): Responsive banner slider and carousel. Free and PRO editions.
+- [Ajax Add to Cart & Quick View](https://weltpixel.com/products/magento-2-ajax-add-to-cart-quick-view-extension): Popup cart confirmation and quick product view without page reload.
+- [Mega Menu](https://weltpixel.com/products/mega-menu-for-magento-2): Dropdown mega menu with categories, CMS blocks, and custom columns.
+- [Infinite Scroll & Ajax Catalog](https://weltpixel.com/products/ajax-catalog-and-infinite-scroll-for-magento-2): Lazy-load products on scroll with Ajax filtering.
+- [Layered Navigation Ajax Filter](https://weltpixel.com/products/improved-magento-2-layered-navigation-ajax-filter-multi-select-price-slider): Multi-select filters with price slider and Ajax updates.
+- [Newsletter Popup](https://weltpixel.com/products/magento-2-popup-for-newsletter-and-exit-intent-extension): Exit-intent and timed newsletter subscription popups.
+- [Instagram Feed Widget](https://weltpixel.com/products/magento-instagram-feed-widget): Display Instagram feed on any store page.
+- [Product Labels & Stickers](https://weltpixel.com/products/magento-2-product-labels-new-sale-discount-stickers): New, Sale, and Discount sticker overlays on product images.
+- [Recently Viewed Products](https://weltpixel.com/products/magento-2-advanced-recently-viewed-products-bar): Persistent recently-viewed products bar.
+- [Full Page Scroll](https://weltpixel.com/products/full-page-scroll-for-magento-2): Full-page vertical scrolling sections.
+- [Quick Cart & Quick Checkout](https://weltpixel.com/products/magento-2-quick-cart-checkout): Streamlined cart and checkout experience.
+- [Multiple Wishlist & Ajax Share](https://weltpixel.com/products/magento-2-multiple-ajax-wishlist-and-share-extension): Multiple wishlists with Ajax add and social sharing.
+- [Custom Product Page Tabs](https://weltpixel.com/products/smart-magento-2-custom-product-tabs-extension): Add custom tabs to product pages.
+- [Checkout Success Page](https://weltpixel.com/products/magento-2-success-page): Customizable order confirmation page with social sharing and related products.
+- [Category Sort By](https://weltpixel.com/products/magento-2-category-sort-by-extension): Additional sorting options (rating, price, newest) on category pages.
+- [Search Autocomplete](https://weltpixel.com/products/ajax-search-autocomplete-for-magento-2): Ajax-powered search with product suggestions.
+
+## Magento 2 SEO & Performance
+
+- [Page Speed Optimization](https://weltpixel.com/products/magento-2-speed-optimization-advanced-js-bundling): Advanced JS bundling, lazy loading, and performance optimization.
+- [Rich Snippets (Schema.org)](https://weltpixel.com/products/magento-2-google-rich-snippets-magento-free-extension): Structured data markup for products, breadcrumbs, and organization.
+- [Google XML Sitemap](https://weltpixel.com/products/google-xml-sitemap-for-magento-2): Enhanced XML sitemap generation for better crawlability.
+- [SEO Page Title Overwrite](https://weltpixel.com/products/seo-page-title-overwrite-for-magento-2): Override page titles for SEO without changing display names.
+- [Lazy Load Images](https://weltpixel.com/products/magento-2-lazy-load-product-extension): Deferred image loading for faster page speed.
+
+## Magento 2 Admin & Operations
+
+- [Multi-Store / Multi-Brand](https://weltpixel.com/products/multi-store-multi-brand-language-magento-2): Manage multiple store views with brand/language switching in the header.
+- [Social Login](https://weltpixel.com/products/magento2-free-social-login-extension): Login with Facebook, Google, Twitter, and more.
+- [CMS Block Scheduler](https://weltpixel.com/products/magento2-cms-block-scheduler): Schedule CMS blocks to appear/disappear at specific dates.
+- [Transactional Email Editor](https://weltpixel.com/products/magento-2-email-template-editor-with-gmail-markup-support): Visual email template editor with Gmail markup support.
+- [Product Reviews & Ratings](https://weltpixel.com/products/magento-2-product-reviews-and-rating-extension): Enhanced product review functionality.
+- [User Profile](https://weltpixel.com/products/magento-2-user-profile): Customer profile pages with avatars and activity.
+- [Fraud Prevention (MaxMind)](https://weltpixel.com/products/magento2-maxmind-fraud-prevention-minfraud): Order fraud scoring via MaxMind MinFraud.
+- [Shopify Checkout for Magento 2](https://weltpixel.com/products/shopify-checkout-for-magento-2-adobe-commerce): Replace Magento's checkout with Shopify's checkout experience.
+
+## Resources
+
+- [Documentation](https://docs.weltpixel.com): Installation guides and configuration docs for all extensions.
+- [Blog](https://weltpixel.com/blogs/news): Tutorials, comparisons, and ecommerce optimization guides.
+- [Help Center](https://help.weltpixel.com/en/): Knowledge base and support articles.
+- [GitHub](https://github.com/Weltpixel): Open-source modules and documentation repositories.
+- [Shopify App Store](https://apps.shopify.com/weltpixel-conversion-tracking): WeltPixel Conversion Tracking app listing.
+
+## Contact
+
+- Website: https://weltpixel.com
+- Support: https://weltpixel.com/pages/contact-us
+- Email: info@weltpixel.com
