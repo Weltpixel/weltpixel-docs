@@ -1,6 +1,6 @@
 # WeltPixel
 
-> WeltPixel builds premium Magento 2 extensions, themes, and a Shopify conversion tracking app. Trusted by 85,000+ stores worldwide. Based in Alba Iulia, Romania.
+> WeltPixel builds premium Magento 2 extensions, themes, and a Shopify conversion tracking app. Trusted by 85,000+ stores worldwide. Based in Cluj-Napoca, Romania.
 
 WeltPixel specializes in ecommerce analytics, server-side conversion tracking, and storefront optimization for Magento 2 (Adobe Commerce) and Shopify.
 
