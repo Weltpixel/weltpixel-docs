@@ -86,17 +86,17 @@
     },
     "WeltPixel_GoogleTagManager": {
       "name": "Google Analytics Enhanced Ecommerce PRO",
-      "version": "1.17.0",
+      "version": "1.15.3",
       "theme_module": false,
       "is_free": true,
-      "last_updated": "May 18, 2026"
+      "last_updated": "January 7, 2026"
     },
     "WeltPixel_GoogleTagManager_Free": {
       "name": "Google Analytics Enhanced Ecommerce",
-      "version": "1.17.0",
+      "version": "1.15.3",
       "theme_module": false,
       "is_free": true,
-      "last_updated": "May 18, 2026"
+      "last_updated": "January 7, 2026"
     },
     "WeltPixel_GA4": {
       "name": "Google Analytics 4 Ecommerce",
