@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
-        <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-            <channel>
-                <atom:link href="https://weltpixel.com//notifications.rss" rel="self" type="application/rss+xml" />
-                <title>WeltPixel</title>
-                <link>https://www.weltpixel.com/</link>
-                <description>WeltPixel</description>
-                <copyright>Copyright (c) 2020 Weltpixel</copyright>
-                <language>en</language>
-                <lastBuildDate>Won, 11 MAY 2020 6:00:00 UTC</lastBuildDate>
-                <ttl>300</ttl>
-               <item>
-                    <title><![CDATA[ Important WeltPixel Product Updates - May 2020 ]]></title>
-                    <link><![CDATA[https://support.weltpixel.com/hc/en-us/articles/115002963573-WeltPixel-Product-Updates-Change-Log-and-New-Releases?utm_source=Admin&utm_medium=Notifications&utm_campaign=Release1.9.7]]></link>
-                    <type><![CDATA[marketing]]></type>
-                    <severity>4</severity>
-                    <description><![CDATA[As usual, your feedback translates into our latest product updates. Stay safe and update your store on a regular basis! Get your updates from the Downloadable Products section of your weltpixel.com account. Cheers!]]></description>
-                    <pubDate>Mon, 11 MAY 2020 6:00:00 UTC</pubDate>
-                </item>               
-            </channel>
-        </rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="https://docs.weltpixel.com/misc-files/notifications.rss" rel="self" type="application/rss+xml" />
+        <title>WeltPixel</title>
+        <link>https://www.weltpixel.com/</link>
+        <description>WeltPixel</description>
+        <copyright>Copyright (c) 2026 WeltPixel</copyright>
+        <language>en</language>
+        <lastBuildDate>Tue, 19 May 2026 06:00:00 UTC</lastBuildDate>
+        <ttl>300</ttl>
+        <item>
+            <title><![CDATA[ Product Updates and New Releases - May 2026 ]]></title>
+            <link><![CDATA[https://weltpixel.com/blogs/news/product-updates-and-new-releases-may-2026?utm_source=Admin&utm_medium=Notifications&utm_campaign=Release1.17.0]]></link>
+            <type><![CDATA[marketing]]></type>
+            <severity>4</severity>
+            <description><![CDATA[WeltPixel v1.17.0 is now available with compatibility updates for Magento 2.4.9 and PHP 8.5, plus overall performance and platform improvements. Review the full release notes and update your store from your WeltPixel account or via Composer.]]></description>
+            <pubDate>Tue, 19 May 2026 06:00:00 UTC</pubDate>
+        </item>
+    </channel>
+</rss>
