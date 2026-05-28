@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+        <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+            <channel>
+                <atom:link href="https://weltpixel.com//notifications.rss" rel="self" type="application/rss+xml" />
+                <title>WeltPixel</title>
+                <link>https://www.weltpixel.com/</link>
+                <description>WeltPixel</description>
+                <copyright>Copyright (c) 2020 Weltpixel</copyright>
+                <language>en</language>
+                <lastBuildDate>Won, 11 MAY 2020 6:00:00 UTC</lastBuildDate>
+                <ttl>300</ttl>
+               <item>
+                    <title><![CDATA[ Important WeltPixel Product Updates - May 2020 ]]></title>
+                    <link><![CDATA[https://support.weltpixel.com/hc/en-us/articles/115002963573-WeltPixel-Product-Updates-Change-Log-and-New-Releases?utm_source=Admin&utm_medium=Notifications&utm_campaign=Release1.9.7]]></link>
+                    <type><![CDATA[marketing]]></type>
+                    <severity>4</severity>
+                    <description><![CDATA[As usual, your feedback translates into our latest product updates. Stay safe and update your store on a regular basis! Get your updates from the Downloadable Products section of your weltpixel.com account. Cheers!]]></description>
+                    <pubDate>Mon, 11 MAY 2020 6:00:00 UTC</pubDate>
+                </item>               
+            </channel>
+        </rss>
