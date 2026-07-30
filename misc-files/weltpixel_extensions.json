@@ -177,7 +177,7 @@
     },
     "WeltPixel_GA4OpenAISS": {
       "name": "Open Ai Server Side Addon for Google Analytics 4",
-      "version": "1.0.0",
+      "version": "1.17.0",
       "theme_module": false,
       "is_free": false,
       "last_updated": "May 18, 2026"
