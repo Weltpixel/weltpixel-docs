@@ -86,7 +86,7 @@
         {
           "name" : "WeltPixel_SocialLogin_Free"
         },
-        { 
+        {
           "name" : "WeltPixel_AdvancedWishlist_Free"
        	},
         {
@@ -201,7 +201,7 @@
         {
           "name" : "WeltPixel_SocialLogin"
         },
-        { 
+        {
           "name" : "WeltPixel_AdvancedWishlist_Free"
        	},
 	{
@@ -249,6 +249,9 @@
         },
         {
           "name" : "WeltPixel_GA4SnapchatSS"
+        },
+        {
+          "name" : "WeltPixel_GA4OpenAISS"
         },
         {
           "name" : "WeltPixel_GoogleAutomatedDiscounts"
