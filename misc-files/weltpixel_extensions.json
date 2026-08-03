@@ -100,21 +100,21 @@
     },
     "WeltPixel_GA4": {
       "name": "Google Analytics 4 Ecommerce",
-      "version": "1.17.2",
+      "version": "1.17.3",
       "theme_module": false,
       "is_free": false,
       "last_updated": "July 16, 2026"
     },
     "WeltPixel_GA4_Free": {
       "name": "Google Analytics 4 Ecommerce",
-      "version": "1.17.2",
+      "version": "1.17.3",
       "theme_module": false,
       "is_free": true,
       "last_updated": "July 16, 2026"
     },
     "WeltPixel_GA4_Pro": {
       "name": "Google Analytics 4 Ecommerce Pro",
-      "version": "1.17.2",
+      "version": "1.17.3",
       "theme_module": false,
       "is_free": false,
       "last_updated": "July 16, 2026"
@@ -471,7 +471,7 @@
     },
     "WeltPixel_SuitePro": {
       "name": "Magento 2 Google Analytics & Social Marketing Suite PRO",
-      "version": "1.17.0",
+      "version": "1.17.3",
       "theme_module": false,
       "is_free": false,
       "last_updated": "May 18, 2026"
