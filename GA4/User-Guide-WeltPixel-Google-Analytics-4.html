@@ -278,6 +278,8 @@
               <li>X (Twitter) Pixel Integration <strong>(PRO)</strong></li>
               <li>Klaviyo Pixel Integration <strong>(PRO)</strong></li>
               <li>Pinterest Pixel Integration <strong>(PRO)</strong></li>
+              <li>Snapchat Pixel Integration <strong>(PRO)</strong></li>
+              <li>OpenAI Ads Pixel Integration <strong>(PRO)</strong></li>
               <li>Enhanced Conversions for Google Ads <strong>(PRO)</strong></li>
               <li>Ability to pre-hash Enhanced Conversion data for Google Ads <strong>(PRO)</strong></li>
               <li>Enhanced Conversions for Google Analytics 4 <strong>(PRO)</strong></li>
@@ -293,6 +295,9 @@
               <li>Full integration with Microsoft Ads (Bing UET) API via addon <strong>(PRO)</strong></li>
               <li>Full integration with X (Twitter) Ads API via addon <strong>(PRO)</strong></li>
               <li>Full integration with Klaviyo API via addon <strong>(PRO)</strong></li>
+              <li>Full integration with Pinterest Conversions API (CAPI) via addon <strong>(PRO)</strong></li>
+              <li>Full integration with Snapchat Conversions API (CAPI) via addon <strong>(PRO)</strong></li>
+              <li>Full integration with OpenAI Ads Conversions API via addon <strong>(PRO)</strong></li>
               <li>Redis Cache Ready for Measurement Protocol <strong>(PRO)</strong></li>
               <li>Send data to multiple Google Analytics 4 properties via Measurement Protocol <strong>(PRO)</strong></li>
               <li>Dedicated Magento Admin Order Grid column for Measurement Protocol order validation <strong>(PRO)</strong></li>
@@ -803,6 +808,223 @@
               <li><strong>Unified data collection</strong> - Streamline your marketing operations by consolidating event data from multiple channels into a single API, improving efficiency and ensuring consistent measurement across your entire business.</li>
             </ul>
           </div>
+        </div>
+        <div class="section clearfix grey">
+          <div class="col-sm-6 text">
+            <h2>X (TWITTER) PIXEL TRACKING (PRO VERSION ONLY).</h2>
+            <p>If you're running the PRO version of the module, and want to integrate with X (Twitter) Pixel, you can do so by following the steps below:</p>
+            <ul>
+              <li><strong>Enable X (Twitter) Pixel Tracking:</strong> To enable go to <strong>Admin → WeltPixel → X (Twitter) Pixel Tracking → X (Twitter) Pixel Tracking Configuration</strong> and set the <strong>Enable X (Twitter) Pixel Tracking</strong> option to <strong>Yes</strong>.</li>
+              <li>
+                <strong>X (Twitter) Pixel Tracking Javascript Code:</strong> Add your X (Twitter) Pixel Tracking tag code here. You can find this in your X Ads account under Tools &gt; Event Manager.
+              </li>
+              <li>
+                <strong>Track Events:</strong> Select the Events that you want to track:
+                <ul>
+                  <li>Purchase</li>
+                  <li>Search</li>
+                  <li>AddToCart</li>
+                  <li>AddToWishlist</li>
+                  <li>InitiateCheckout</li>
+                  <li>AddPaymentInfo</li>
+                  <li>ViewContent (Product)</li>
+                  <li>ViewContent (Category)</li>
+                </ul>
+              </li>
+              <li><strong>Twitter Event IDs:</strong> Assign unique Twitter ID values for each GA4 tracking event. Each event requires a unique Twitter ID from your X Ads account.</li>
+              <li><strong>Product Identifier [ ID / SKU ]:</strong> Choose the Product Identifier type you want to send to X (Twitter) for enabled events.</li>
+            </ul>
+            <h4>Grand Total Calculation Settings.</h4>
+            <p>Tax calculation settings become available if Order Success Page Total Calculation is set to <strong>Grandtotal</strong>.</p>
+            <ul>
+              <li><strong>Order Success Page Total Calculation</strong> Default (Uses GA4-level settings / Grandtotal / Subtotal).</li>
+              <li><strong>Exclude Tax From Transaction</strong> Yes/No - Choose whether to send transaction value with or without tax. This applies only to Purchase events.</li>
+              <li><strong>Exclude Shipping charges from Transaction</strong> Yes/No - Choose whether to include or exclude Shipping charge values from Purchase events. Setting this option to Yes deducts the Shipping value from the Grand Total.</li>
+            </ul>
+            <p>Save the configuration and flush the Magento Cache.</p>
+            <h4>X (Twitter) Ads Server-Side Tracking via Conversions API (CAPI)</h4>
+            <p>With the PRO version of the Google Analytics 4 extension, you can integrate with the X (Twitter) Ads Conversions API. To do so, you'll need to install and enable the <a href="https://www.weltpixel.com/x-twitter-ads-server-side-addon.html" target="_blank">X (Twitter) Ads Conversions API (CAPI) Addon</a>. Once the addon is enabled, simply follow the instructions in the <a href="https://weltpixel.com/resources/ModuleDoc/Magento2/TwitterAddon/User-Guide-WeltPixel-Twitter-Addon.html" target="_blank">addon's User Guide</a> to configure it and begin sending server-side data to X (Twitter). The benefits of doing so are substantial and include:</p>
+            <ul>
+              <li><strong>More complete conversion data</strong> - Server-side events are not affected by ad blockers or browser tracking restrictions, so fewer conversions go unrecorded.</li>
+              <li><strong>Better campaign optimization</strong> - A richer, more accurate dataset gives X's algorithms more to work with when optimizing delivery and bidding.</li>
+              <li><strong>Improved event matching</strong> - Sending hashed customer data alongside conversions helps X attribute more events to the right users.</li>
+              <li><strong>Resilient measurement</strong> - Pairing the client-side pixel with a server-side implementation keeps your tracking working as browser policies continue to change.</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 image no-padding"><img src="images/google-analytics/ga4-x-pixel-config.png" class="width-full" alt="weltpixel"></div>
+        </div>
+        <div class="section clearfix white">
+          <div class="col-sm-6 image no-padding"><img src="images/google-analytics/ga4-klaviyo-pixel-config.png" class="width-full" alt="weltpixel"></div>
+          <div class="col-sm-6 text">
+            <h2>KLAVIYO PIXEL TRACKING (PRO VERSION ONLY).</h2>
+            <p>If you're running the PRO version of the module, and want to integrate with Klaviyo Pixel, you can do so by following the steps below:</p>
+            <ul>
+              <li><strong>Enable Klaviyo Pixel Tracking:</strong> To enable go to <strong>Admin → WeltPixel → Klaviyo Pixel Tracking → Klaviyo Pixel Tracking Configuration</strong> and set the <strong>Enable Klaviyo Pixel Tracking</strong> option to <strong>Yes</strong>.</li>
+              <li>
+                <strong>Klaviyo Pixel Tracking Public Api Key:</strong> Add your Klaviyo Public API Key here. You can find it in your Klaviyo account settings, under the API Keys section.
+              </li>
+              <li>
+                <strong>Track Events:</strong> Select the Events that you want to track:
+                <ul>
+                  <li>View Page</li>
+                  <li>Placed Order</li>
+                  <li>Added to Cart</li>
+                  <li>Added to Wishlist</li>
+                  <li>Checkout Started</li>
+                  <li>Product Searched</li>
+                  <li>Viewed Product</li>
+                  <li>Viewed Category</li>
+                  <li>Created Account</li>
+                  <li>Selected Payment Method (Payment Information)</li>
+                </ul>
+              </li>
+            </ul>
+            <h4>Grand Total Calculation Settings.</h4>
+            <p>Tax calculation settings become available if Order Success Page Total Calculation is set to <strong>Grandtotal</strong>.</p>
+            <ul>
+              <li><strong>Order Success Page Total Calculation</strong> Default (Uses GA4-level settings / Grandtotal / Subtotal).</li>
+              <li><strong>Exclude Tax From Transaction</strong> Yes/No - Choose whether to send transaction value with or without tax. This applies only to Purchase events.</li>
+              <li><strong>Exclude Shipping charges from Transaction</strong> Yes/No - Choose whether to include or exclude Shipping charge values from Purchase events. Setting this option to Yes deducts the Shipping value from the Grand Total.</li>
+            </ul>
+            <p>Save the configuration and flush the Magento Cache.</p>
+            <h4>Klaviyo Server-Side Tracking via API</h4>
+            <p>With the PRO version of the Google Analytics 4 extension, you can integrate with the Klaviyo API. To do so, you'll need to install and enable the <a href="https://www.weltpixel.com/klaviyo-server-side-addon.html" target="_blank">Klaviyo API Addon</a>. Once the addon is enabled, simply follow the instructions in the <a href="https://weltpixel.com/resources/ModuleDoc/Magento2/KlaviyoAddon/User-Guide-WeltPixel-Klaviyo-Addon.html" target="_blank">addon's User Guide</a> to configure it and begin sending server-side data to Klaviyo. The benefits of doing so are substantial and include:</p>
+            <ul>
+              <li><strong>Complete customer profiles</strong> - Server-side events fill the gaps left by blocked browser scripts, so your Klaviyo profiles reflect what customers actually did.</li>
+              <li><strong>More reliable flow triggers</strong> - Abandoned cart, browse abandonment and post-purchase flows fire on data sent from your server rather than the browser.</li>
+              <li><strong>Better segmentation</strong> - A more accurate event history means segments and personalization are built on complete data.</li>
+              <li><strong>Resilient measurement</strong> - Pairing the client-side pixel with a server-side implementation keeps your tracking working as browser policies continue to change.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section clearfix black">
+          <div class="col-sm-6 text">
+            <h2>PINTEREST PIXEL TRACKING (PRO VERSION ONLY).</h2>
+            <p>If you're running the PRO version of the module, and want to integrate with Pinterest Pixel, you can do so by following the steps below:</p>
+            <ul>
+              <li><strong>Enable Pinterest Pixel Tracking:</strong> To enable go to <strong>Admin → WeltPixel → Pinterest Pixel Tracking → Pinterest Pixel Tracking Configuration</strong> and set the <strong>Enable Pinterest Pixel Tracking</strong> option to <strong>Yes</strong>.</li>
+              <li>
+                <strong>Pinterest Pixel Tracking Javascript Code:</strong> Get your Pinterest Pixel Tracking Javascript Code from your Pinterest Ads Manager account and paste it here.
+              </li>
+              <li>
+                <strong>Track Events:</strong> Select the Events that you want to track:
+                <ul>
+                  <li>PageVisit</li>
+                  <li>Checkout (Purchase)</li>
+                  <li>AddPaymentInfo</li>
+                  <li>AddToCart</li>
+                  <li>AddToWishlist</li>
+                  <li>InitiateCheckout</li>
+                  <li>Search</li>
+                  <li>ViewContent</li>
+                  <li>ViewCategory</li>
+                  <li>Signup</li>
+                </ul>
+              </li>
+              <li><strong>Product Identifier [ ID / SKU ]:</strong> Choose the Product Identifier type you want to send to Pinterest for enabled events.</li>
+            </ul>
+            <h4>Grand Total Calculation Settings.</h4>
+            <p>Tax calculation settings become available if Order Success Page Total Calculation is set to <strong>Grandtotal</strong>.</p>
+            <ul>
+              <li><strong>Order Success Page Total Calculation</strong> Default (Uses GA4-level settings / Grandtotal / Subtotal).</li>
+              <li><strong>Exclude Tax From Transaction</strong> Yes/No - Choose whether to send transaction value with or without tax. This applies only to Purchase events.</li>
+              <li><strong>Exclude Shipping charges from Transaction</strong> Yes/No - Choose whether to include or exclude Shipping charge values from Purchase events. Setting this option to Yes deducts the Shipping value from the Grand Total.</li>
+            </ul>
+            <p>Save the configuration and flush the Magento Cache.</p>
+            <h4>Pinterest Ads Server-Side Tracking via Conversions API (CAPI)</h4>
+            <p>With the PRO version of the Google Analytics 4 extension, you can integrate with the Pinterest Conversions API. To do so, you'll need to install and enable the <a href="https://www.weltpixel.com/pinterest-conversions-api-addon.html" target="_blank">Pinterest Conversions API (CAPI) Addon</a>. Once the addon is enabled, simply follow the instructions in the <a href="https://weltpixel.com/resources/ModuleDoc/Magento2/PinterestAddon/User-Guide-WeltPixel-Pinterest-Addon.html" target="_blank">addon's User Guide</a> to configure it and begin sending server-side data to Pinterest. The benefits of doing so are substantial and include:</p>
+            <ul>
+              <li><strong>Fewer lost conversions</strong> - Server-side events reach Pinterest even when browser-side tracking is blocked or fails to load.</li>
+              <li><strong>Stronger campaign performance</strong> - More complete conversion data improves how Pinterest optimizes delivery and bidding for your campaigns.</li>
+              <li><strong>Improved event matching</strong> - Hashed customer data sent alongside conversions helps Pinterest attribute more events to the right users.</li>
+              <li><strong>Resilient measurement</strong> - Pairing the client-side pixel with a server-side implementation keeps your tracking working as browser policies continue to change.</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 image no-padding"><img src="images/google-analytics/ga4-pinterest-pixel-config.png" class="width-full" alt="weltpixel"></div>
+        </div>
+        <div class="section clearfix grey">
+          <div class="col-sm-6 image no-padding"><img src="images/google-analytics/ga4-snapchat-pixel-config.png" class="width-full" alt="weltpixel"></div>
+          <div class="col-sm-6 text">
+            <h2>SNAPCHAT PIXEL TRACKING (PRO VERSION ONLY).</h2>
+            <p>If you're running the PRO version of the module, and want to integrate with Snapchat Pixel, you can do so by following the steps below:</p>
+            <ul>
+              <li><strong>Enable Snapchat Pixel Tracking:</strong> To enable go to <strong>Admin → WeltPixel → Snapchat Pixel Tracking → Snapchat Pixel Tracking Configuration</strong> and set the <strong>Enable Snapchat Pixel Tracking</strong> option to <strong>Yes</strong>.</li>
+              <li>
+                <strong>Snapchat Pixel Tracking Javascript Code:</strong> Get your Snapchat Pixel Tracking Javascript Code from your Snapchat Ads Manager account and paste it here.
+              </li>
+              <li>
+                <strong>Track Events:</strong> Select the Events that you want to track:
+                <ul>
+                  <li>Purchase</li>
+                  <li>Add Billing</li>
+                  <li>Add To Cart</li>
+                  <li>Add To Wishlist</li>
+                  <li>Start Checkout</li>
+                  <li>Search</li>
+                  <li>View Content</li>
+                  <li>Signup</li>
+                </ul>
+              </li>
+              <li><strong>Product Identifier [ ID / SKU ]:</strong> Choose the Product Identifier type you want to send to Snapchat for enabled events.</li>
+            </ul>
+            <h4>Grand Total Calculation Settings.</h4>
+            <p>Tax calculation settings become available if Order Success Page Total Calculation is set to <strong>Grandtotal</strong>.</p>
+            <ul>
+              <li><strong>Order Success Page Total Calculation</strong> Default (Uses GA4-level settings / Grandtotal / Subtotal).</li>
+              <li><strong>Exclude Tax From Transaction</strong> Yes/No - Choose whether to send transaction value with or without tax. This applies only to Purchase events.</li>
+              <li><strong>Exclude Shipping charges from Transaction</strong> Yes/No - Choose whether to include or exclude Shipping charge values from Purchase events. Setting this option to Yes deducts the Shipping value from the Grand Total.</li>
+            </ul>
+            <p>Save the configuration and flush the Magento Cache.</p>
+            <h4>Snapchat Ads Server-Side Tracking via Conversions API (CAPI)</h4>
+            <p>With the PRO version of the Google Analytics 4 extension, you can integrate with the Snapchat Conversions API. To do so, you'll need to install and enable the <a href="https://www.weltpixel.com/snapchat-server-side-addon.html" target="_blank">Snapchat Ads Conversions API (CAPI) Addon</a>. Once the addon is enabled, simply follow the instructions in the <a href="https://weltpixel.com/resources/ModuleDoc/Magento2/SnapchatAddon/User-Guide-WeltPixel-Snapchat-Addon.html" target="_blank">addon's User Guide</a> to configure it and begin sending server-side data to Snapchat. The benefits of doing so are substantial and include:</p>
+            <ul>
+              <li><strong>More complete conversion data</strong> - Server-side events are not affected by ad blockers or browser tracking restrictions, so fewer conversions go unrecorded.</li>
+              <li><strong>Better ad optimization</strong> - A fuller dataset gives Snapchat more signal to work with when optimizing delivery and bidding.</li>
+              <li><strong>Improved event matching</strong> - Hashed customer data sent alongside conversions helps Snapchat attribute more events to the right users.</li>
+              <li><strong>Resilient measurement</strong> - Pairing the client-side pixel with a server-side implementation keeps your tracking working as browser policies continue to change.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="section clearfix white">
+          <div class="col-sm-6 text">
+            <h2>OPENAI ADS PIXEL TRACKING (PRO VERSION ONLY).</h2>
+            <p>If you're running the PRO version of the module, and want to integrate with the OpenAI Ads Pixel, you can do so by following the steps below:</p>
+            <ul>
+              <li><strong>Enable OpenAI Ads Pixel Tracking:</strong> To enable go to <strong>Admin → WeltPixel → OpenAI Ads Pixel Tracking → OpenAI Ads Pixel Tracking Configuration</strong> and set the <strong>Enable OpenAI Ads Pixel Tracking</strong> option to <strong>Yes</strong>.</li>
+              <li>
+                <strong>OpenAI Ads Pixel Tracking Javascript Code:</strong> Paste the Measurement Pixel snippet from your OpenAI Ads account. It must contain both the oaiq loader and the oaiq('init', { pixelId: '...' }) call.
+              </li>
+              <li>
+                <strong>Track Events:</strong> Select the Events that you want to track:
+                <ul>
+                  <li>PageView</li>
+                  <li>ViewContent</li>
+                  <li>AddToCart</li>
+                  <li>InitiateCheckout</li>
+                  <li>Purchase</li>
+                  <li>Signup</li>
+                </ul>
+              </li>
+              <li><strong>Product Identifier [ ID / SKU ]:</strong> Choose the Product Identifier type you want to send to OpenAI Ads for enabled events.</li>
+            </ul>
+            <h4>Grand Total Calculation Settings.</h4>
+            <p>Tax calculation settings become available if Order Success Page Total Calculation is set to <strong>Grandtotal</strong>.</p>
+            <ul>
+              <li><strong>Order Success Page Total Calculation</strong> Default (Uses GA4-level settings / Grandtotal / Subtotal).</li>
+              <li><strong>Exclude Tax From Transaction</strong> Yes/No - Choose whether to send transaction value with or without tax. This applies only to Purchase events.</li>
+              <li><strong>Exclude Shipping charges from Transaction</strong> Yes/No - Choose whether to include or exclude Shipping charge values from Purchase events. Setting this option to Yes deducts the Shipping value from the Grand Total.</li>
+            </ul>
+            <p>Save the configuration and flush the Magento Cache.</p>
+            <h4>OpenAI Ads Server-Side Tracking via Conversions API (CAPI)</h4>
+            <p>With the PRO version of the Google Analytics 4 extension, you can integrate with the OpenAI Ads Conversions API. To do so, you'll need to install and enable the <a href="https://weltpixel.com/products/openai-ads-server-side-addon" target="_blank">OpenAI Ads Conversions API Addon</a>. Once the addon is enabled, simply follow the instructions in the <a href="https://weltpixel.com/resources/ModuleDoc/Magento2/OpenAIAdsAddon/User-Guide-WeltPixel-OpenAI-Ads-Addon.html" target="_blank">addon's User Guide</a> to configure it and begin sending server-side data to OpenAI Ads. The benefits of doing so are substantial and include:</p>
+            <ul>
+              <li><strong>Conversion measurement for ChatGPT ad campaigns</strong> - See which purchases and signups came from ad campaigns that run inside ChatGPT.</li>
+              <li><strong>More complete conversion data</strong> - Server-side events are not affected by ad blockers or browser tracking restrictions, so fewer conversions go unrecorded.</li>
+              <li><strong>Better campaign optimization</strong> - A fuller, more accurate dataset gives OpenAI Ads more signal to work with when optimizing your campaigns.</li>
+              <li><strong>Resilient measurement</strong> - Pairing the client-side pixel with a server-side implementation keeps your tracking working as browser policies continue to change.</li>
+            </ul>
+          </div>
+          <div class="col-sm-6 image no-padding"><img src="images/google-analytics/ga4-openai-pixel-config.png" class="width-full" alt="weltpixel"></div>
         </div>
         <div class="section clearfix grey">
           <div class="container" style="padding: 0;">
