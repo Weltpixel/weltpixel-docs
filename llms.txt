@@ -12,7 +12,7 @@ WeltPixel specializes in ecommerce analytics, server-side conversion tracking, a
 
 - [Google Analytics 4 (GA4) Extension](https://weltpixel.com/products/magento-2-google-analytics-4-ga4-extension-with-gtm-server-side-tracking): GA4 with GTM support and server-side tracking. Full ecommerce event coverage, GTM JSON templates, Hyva compatible. Available in Standard (free) and PRO editions.
 - [Google Tag Manager (GTM) Extension](https://weltpixel.com/products/google-analytics-enhanced-ecommerce-tag-manager-magento-2): Enhanced Ecommerce data layer for GTM. Tracks product impressions, clicks, add-to-cart, checkout steps, and purchases.
-- [Google Analytics & Social Marketing Suite PRO](https://weltpixel.com/products/google-analytics-4-social-marketing-suite): All-in-one analytics bundle: GA4 PRO + Meta Pixel + TikTok + Pinterest + Klaviyo + Microsoft Ads + Snapchat + Reddit + X (Twitter) server-side addons.
+- [Google Analytics & Social Marketing Suite PRO](https://weltpixel.com/products/google-analytics-4-social-marketing-suite): All-in-one analytics bundle: GA4 PRO + Meta Pixel + TikTok + Pinterest + Klaviyo + Microsoft Ads + Snapchat + Reddit + X (Twitter) + OpenAI Ads server-side addons.
 - [Meta Pixel Conversions API Addon](https://weltpixel.com/products/meta-pixel-server-side-addon): Server-side Meta (Facebook/Instagram) conversion tracking via Conversions API. Requires GA4 PRO.
 - [TikTok Events API Addon](https://weltpixel.com/products/tiktok-pixel-server-side-addon): Server-side TikTok conversion tracking. Requires GA4 PRO.
 - [Klaviyo API Addon](https://weltpixel.com/products/klaviyo-server-side-addon): Server-side Klaviyo event tracking. Requires GA4 PRO.
@@ -21,6 +21,7 @@ WeltPixel specializes in ecommerce analytics, server-side conversion tracking, a
 - [Snapchat API Addon](https://weltpixel.com/products/snapchat-server-side-addon): Server-side Snapchat conversion tracking. Requires GA4 PRO.
 - [Reddit Pixel API Addon](https://weltpixel.com/products/reddit-pixel-server-side-addon): Server-side Reddit conversion tracking. Requires GA4 PRO.
 - [X (Twitter) Ads API Addon](https://weltpixel.com/products/x-twitter-ads-server-side-addon): Server-side X/Twitter conversion tracking. Requires GA4 PRO.
+- [OpenAI Ads Conversions API Addon](https://weltpixel.com/products/openai-ads-server-side-addon): Server-side conversion tracking for OpenAI Ads campaigns shown in ChatGPT. Requires GA4 PRO.
 - [Google Consent Mode V2](https://weltpixel.com/products/google-consent-mode-v2): GDPR/ePrivacy compliant consent management for GA4 and Google Ads.
 - [Google Automated Discounts](https://weltpixel.com/products/google-automated-discounts): Automated discount display in Google Shopping and Merchant Center.
 - [Product Feed](https://weltpixel.com/products/product-feed-for-magento-2): Google Shopping, Facebook Catalog, and marketplace product feed generation.
