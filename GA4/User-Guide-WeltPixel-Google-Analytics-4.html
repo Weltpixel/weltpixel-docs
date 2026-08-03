@@ -1035,7 +1035,13 @@
       <div id="change-log" class="section clearfix grey">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.2 - July 16, 2026</strong></p>
+          <p><strong>What's new in v.1.17.3 - August 3, 2026</strong></p>
+          <ul>
+            <li><strong>New Feature:</strong> Introduced the OpenAI Ads integration, bringing conversion tracking to advertising campaigns that run inside ChatGPT. The OpenAI Ads client-side pixel can be configured directly in the PRO version, and full server-side tracking is available through the new <a href="https://weltpixel.com/products/openai-ads-server-side-addon" target="_blank">OpenAI Ads Conversions API Addon</a>.</li>
+            <li>Fixed an issue where the extension's HTTP context plugin could trigger a PHP session start on anonymous Full Page Cache hits, attaching a session cookie to responses that should remain fully cacheable and reducing cache efficiency. The plugin was unused and has been removed entirely.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.2 - July 16, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Added a safeguard to the Custom Dimensions functionality that prevents custom attribute dimensions from overwriting reserved GA4 item fields such as price or quantity. Previously, naming a custom dimension after a reserved field could replace the real value in the event payload and lead to errors during cart events. Such dimensions are now skipped automatically, and a warning is written to the logs indicating which attribute should be renamed.</li>
             <li>Fixed an issue where cart value calculations could trigger a fatal "Unsupported operand types" PHP 8 error when a product price was provided in a non-numeric format. The fix covers Add to Cart and Remove from Cart events, including bundle products with dynamic pricing.</li>
