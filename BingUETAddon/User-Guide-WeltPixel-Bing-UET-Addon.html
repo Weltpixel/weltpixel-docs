@@ -485,6 +485,20 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.4</span>
+                      <span class="version-date">September 1, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li><strong>New Feature:</strong> Added server-side bot filtering, using the same merchant-editable pattern list as the GA4 Measurement Protocol, so traffic from self-identifying crawlers is no longer sent to the Conversions API. Order events are always sent.</li>
+                          <li>Fixed server-side events not honoring visitor consent. When <em>Require Visitor Consent for Server-Side Events</em> is enabled in the GA4 configuration, events are now gated on the shopper's advertising consent, and order events are judged on the consent stored with the order.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.0</span>
                       <span class="version-date">May 18, 2026</span>
                     </div>

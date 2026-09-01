@@ -332,7 +332,13 @@
         <div id="change-log" class="section clearfix white">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+            <p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
+            <ul>
+              <li><strong>New Feature:</strong> Added server-side bot filtering, using the same merchant-editable pattern list as the GA4 Measurement Protocol, so traffic from self-identifying crawlers is no longer sent to the Conversions API. Order events are always sent.</li>
+              <li>Fixed server-side events not honoring visitor consent. When <em>Require Visitor Consent for Server-Side Events</em> is enabled in the GA4 configuration, events are now gated on the shopper's advertising consent, and order events are judged on the consent stored with the order.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
               <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

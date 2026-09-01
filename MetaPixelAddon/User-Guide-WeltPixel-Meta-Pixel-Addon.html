@@ -333,7 +333,16 @@
         <div id="change-log" class="section clearfix white">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+            <p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
+            <ul>
+              <li><strong>New Feature:</strong> Added PageView as a server-side Conversions API event, selectable independently from the browser pixel and deduplicated against it with a shared event ID.</li>
+              <li><strong>New Feature:</strong> Added an anonymous visitor identifier for guests who are neither logged in nor have placed an order, giving Meta a stable value to match on alongside fbp, fbc, IP and user agent.</li>
+              <li><strong>New Feature:</strong> Added server-side bot filtering using the shared GA4 pattern list, so crawler traffic is kept out of your Conversions API reports. Order events are always sent.</li>
+              <li>Fixed visitor consent not being honored for server-side sends when <em>Require Visitor Consent for Server-Side Events</em> is enabled in the GA4 configuration.</li>
+              <li>Fixed guest data being written on cron, CLI and admin requests, where there is no browser to receive the cookie.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
               <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

@@ -575,6 +575,26 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.4</span>
+                      <span class="version-date">September 1, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li>Fixed an issue where customer matching data was silently discarded. The Conversions API user object was sent with the wrong field names, so OpenAI accepted every request but dropped the identifiers inside it. All identity and location fields have been corrected, so matching now works as intended.</li>
+                          <li>Fixed the guest visitor identifier, which was based on a PHP session ID that changed on every visit and never matched the browser pixel. It is now derived from the customer ID, falling back to the email hash, so the browser and server layers send the same value.</li>
+                          <li>Fixed admin-created and imported orders being reported as web conversions with a made-up source URL. They are now reported as offline with no source URL, while storefront orders pushed later by cron correctly stay web.</li>
+                          <li>Fixed silent failures during event building and the cron purchase push, which are now written to the OpenAI Ads log for easier troubleshooting.</li>
+                          <li><strong>New Feature:</strong> Phone number, first name, last name and region are now sent, normalized to OpenAI's own matching rules to improve match quality.</li>
+                          <li><strong>New Feature:</strong> Hashed identifiers a guest provides at checkout are now replayed on their later browsing events, which previously carried no identifier at all. Only hashed values are stored.</li>
+                          <li><strong>New Feature:</strong> Added an anonymous visitor identifier for guests, sent alongside the identity-based value so a guest who later signs in keeps a single profile. Disabled by default.</li>
+                          <li><strong>New Feature:</strong> Added an option to report denied-consent events with OpenAI's opt-out flag, so the conversion is still counted while the visitor is excluded from user-level personalization. Confirm this is permitted for your store before enabling. Disabled by default.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.0</span>
                       <span class="version-date">August 3, 2026</span>
                     </div>

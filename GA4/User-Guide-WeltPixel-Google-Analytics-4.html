@@ -1257,7 +1257,22 @@
       <div id="change-log" class="section clearfix grey">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.3 - August 3, 2026</strong></p>
+          <p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
+          <ul>
+            <li><strong>New Feature:</strong> Added a <em>Require Visitor Consent for Server-Side Events</em> option that gates the GA4 Measurement Protocol and every Conversions API addon on the shopper's Consent Mode v2 choice. It works with Magento's Cookie Restriction Mode and external consent platforms, and because the consent state is stored on the order, an order sent later by cron is judged on the consent the shopper actually gave at checkout. Disabled by default.</li>
+            <li><strong>New Feature:</strong> Added server-side bot filtering with a merchant-editable list of user-agent patterns, so traffic from crawlers is kept out of your Conversions API reports. Order events are always sent, since a completed order is a real conversion regardless of the user agent.</li>
+            <li><strong>New Feature:</strong> Added a Meta PageView event that can be enabled independently on the browser pixel and server-side. Both copies share a single event ID, so Meta deduplicates them into one event.</li>
+            <li><strong>New Feature:</strong> Added an anonymous visitor identifier for Meta advanced matching, letting Meta match guests who have not logged in or placed an order. It is generated once per browser and sent by both the pixel and the Conversions API. Consent-gated and disabled by default.</li>
+            <li><strong>New Feature:</strong> Added a campaign-capture fallback that stores utm and gclid values from the landing URL in a first-party cookie and reads them back server-side, so attribution survives Varnish stripping the parameters and Full Page Cache dropping cookies on cacheable responses.</li>
+            <li><strong>New Feature:</strong> Added an OpenAI Ads click-ID fallback that captures the ChatGPT click identifier from the landing URL, so attribution holds up even when OpenAI's script is blocked or only the Conversions API is enabled.</li>
+            <li><strong>New Feature:</strong> Added add-to-cart tracking for third-party AJAX cart themes (Rokanthemes AjaxSuite), which previously never refreshed the tracking data and silently dropped every add-to-cart event.</li>
+            <li>Fixed an issue where zero-priced configurable child items were duplicated in the server-side purchase and add_payment_info events, inflating item counts.</li>
+            <li>Fixed an issue where a PHP session could be started on anonymous Full Page Cache hits, issuing a session cookie to visitors who should never have received one.</li>
+            <li>Fixed an issue where the extension attempted to write cookies on cron, CLI and admin requests, where there is no browser to receive them, producing "Cannot modify header information" errors.</li>
+            <li>Removed the client-side bot-detection flag. Because it was rendered into the page and stored in Full Page Cache, a single crawler could suppress tracking for every real shopper later served that cached page. Bot filtering is now evaluated per request on the server.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.3 - August 3, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Introduced the OpenAI Ads integration, bringing conversion tracking to advertising campaigns that run inside ChatGPT. The OpenAI Ads client-side pixel can be configured directly in the PRO version, and full server-side tracking is available through the new <a href="https://weltpixel.com/products/openai-ads-server-side-addon" target="_blank">OpenAI Ads Conversions API Addon</a>.</li>
             <li>Fixed an issue where the extension's HTTP context plugin could trigger a PHP session start on anonymous Full Page Cache hits, attaching a session cookie to responses that should remain fully cacheable and reducing cache efficiency. The plugin was unused and has been removed entirely.</li>

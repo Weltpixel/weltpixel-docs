@@ -689,6 +689,60 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.4</span>
+                      <span class="version-date">September 1, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <h5>New Features</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: Added a <em>Require Visitor Consent for Server-Side Events</em> option that gates the GA4 Measurement Protocol and all Conversions API addons on the shopper's Consent Mode v2 choice, with the consent state stored on the order so cron-pushed orders are judged on the consent given at checkout.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: Added server-side bot filtering with a merchant-editable user-agent list, shared across every Conversions API addon in the bundle. Order events are always sent.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Meta: Added a server-side PageView event and an anonymous visitor identifier for guest matching, both deduplicated or matched against the browser pixel.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Added a campaign-capture fallback so utm and gclid attribution survives Varnish and Full Page Cache, and an OpenAI Ads click-ID fallback so ChatGPT attribution holds up when the pixel is blocked.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="change-type">
+                        <h5>Fixes and improvements</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">OpenAI Ads: Fixed customer matching data being silently discarded because of incorrect Conversions API field names, and corrected the guest identifier so the browser and server layers match. Denied-consent events can now optionally be reported with OpenAI's opt-out flag.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: Fixed duplicated zero-priced configurable items inflating item counts, a PHP session being started on anonymous Full Page Cache hits, and cookie-write errors on cron and CLI requests. Removed the cacheable client-side bot-detection flag in favor of per-request server-side filtering.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.3</span>
                       <span class="version-date">August 3, 2026</span>
                     </div>
