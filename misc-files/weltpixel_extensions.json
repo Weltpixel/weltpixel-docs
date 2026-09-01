@@ -100,87 +100,87 @@
     },
     "WeltPixel_GA4": {
       "name": "Google Analytics 4 Ecommerce",
-      "version": "1.17.3",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "August 3, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4_Free": {
       "name": "Google Analytics 4 Ecommerce",
-      "version": "1.17.3",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": true,
-      "last_updated": "August 3, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4_Pro": {
       "name": "Google Analytics 4 Ecommerce Pro",
-      "version": "1.17.3",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "August 3, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4MetaSS": {
       "name": "Meta Pixel Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4TikTokSS": {
       "name": "TikTok Pixel Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4RedditSS": {
       "name": "Reddit Pixel Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4BingSS": {
       "name": "Bing UET Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4TwitterSS": {
       "name": "X (Twitter) Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4KlaviyoSS": {
       "name": "Klaviyo Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4PinterestSS": {
       "name": "Pinterest Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4SnapchatSS": {
       "name": "Snapchat Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "May 18, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4OpenAISS": {
       "name": "OpenAI Ads Server-Side Addon for Google Analytics 4",
-      "version": "1.17.0",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "August 3, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_GA4AttentiveSS": {
       "name": "Attentive Server-Side Addon for Google Analytics 4",
@@ -471,10 +471,10 @@
     },
     "WeltPixel_SuitePro": {
       "name": "Magento 2 Google Analytics & Social Marketing Suite PRO",
-      "version": "1.17.3",
+      "version": "1.17.4",
       "theme_module": false,
       "is_free": false,
-      "last_updated": "August 3, 2026"
+      "last_updated": "September 1, 2026"
     },
     "WeltPixel_Pearl": {
       "name": "Pearl Theme",
