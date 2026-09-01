@@ -7,8 +7,16 @@
         <description>WeltPixel</description>
         <copyright>Copyright (c) 2026 WeltPixel</copyright>
         <language>en</language>
-        <lastBuildDate>Mon, 03 Aug 2026 06:00:00 UTC</lastBuildDate>
+        <lastBuildDate>Tue, 01 Sep 2026 06:00:00 UTC</lastBuildDate>
         <ttl>300</ttl>
+        <item>
+            <title><![CDATA[ Google Analytics 4 1.17.4 - Server-Side Consent, Bot Filtering and Better Ad Matching ]]></title>
+            <link><![CDATA[https://weltpixel.com/blogs/magento/product-updates-and-new-releases-september-2026?utm_source=Admin&utm_medium=Notifications&utm_campaign=GA4v1174]]></link>
+            <type><![CDATA[marketing]]></type>
+            <severity>4</severity>
+            <description><![CDATA[Google Analytics 4 for Magento 2 version 1.17.4 is now available, together with matching releases of Marketing Suite PRO and all nine server-side Conversions API addons: Meta Pixel, TikTok, Reddit, Microsoft Ads (Bing), X (Twitter), Klaviyo, Pinterest, Snapchat and OpenAI Ads. This release adds a server-side consent gate that honours Consent Mode v2 choices and stores the consent state on the quote and order, so conversions pushed later by cron respect it; server-side bot filtering with a merchant-editable user agent list shared by the Measurement Protocol and every addon; anonymous matching for guest visitors; and capture of utm and gclid attribution parameters into first-party cookies. It also fixes duplicated zero-priced configurable child items in purchase events, unwanted session cookies on cached requests, and header modification errors on cron, CLI and admin requests. The OpenAI Ads addon additionally corrects Conversions API user field names that were causing identifier data loss, and improves offline conversion reporting for admin-created and imported orders. All new features ship disabled by default and are enabled from the extension configuration.]]></description>
+            <pubDate>Tue, 01 Sep 2026 06:00:00 UTC</pubDate>
+        </item>
         <item>
             <title><![CDATA[ OpenAI Ads Conversion Tracking for Magento 2 - New Server-Side Addon ]]></title>
             <link><![CDATA[https://weltpixel.com/blogs/news/openai-ads-conversion-tracking-magento-2-server-side-addon?utm_source=Admin&utm_medium=Notifications&utm_campaign=OpenAIAdsAddon]]></link>
