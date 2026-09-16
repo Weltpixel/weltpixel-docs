@@ -296,7 +296,7 @@
             <ul>
               <li><strong>Api Hostname</strong> - MaxMind automatically picks the data center geographically closest to you. In some cases, this data center may not be the one that provides you with the best service. You can explicitly try the following hostnames to see which one provides the best performance for you.</li>
               <li><strong>MaxMind License Key</strong> - The license key obtained from maxmind.com. In case you're using the Legacy minFraud services, please ask for this to be enabled on your MaxMind account.</li>
-              <li><strong>Disable cURL Server Certificate Check</strong> - For temporary server certificate issue. You can set cURL to accept any server(peer) certificate.</li>
+              <li><strong>Disable cURL Server Certificate Check</strong> - For a temporary server certificate issue only. Set to Yes, cURL accepts any server (peer) certificate for the legacy minFraud request, which also exposes your licence key and order data to a network attacker. Defaults to No since v1.17.5; leave it at No unless you are actively working around a certificate problem. The current minFraud API request always verifies the certificate.</li>
             </ul>
           </div>
         </div>

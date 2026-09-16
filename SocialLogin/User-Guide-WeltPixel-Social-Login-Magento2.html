@@ -208,6 +208,12 @@
                   <li><strong>Social Login Popup Style [Default / Right Side]</strong> - Select the style for the Social Login popup. Mobile devices are defaulted to the <strong>Right Side</strong> design.</li>
                 </ul>
               </ul>
+              <h4>LINKED ACCOUNTS PAGE AND SERVER REQUIREMENTS (v1.17.5).</h4>
+              <ul>
+                <li>The <strong>Social Accounts</strong> page in the customer account requires a signed-in customer, and unlinking an account is a posted form with a form key rather than a plain link. If your theme forks <em>account/social-accounts.phtml</em>, re-fork it from the module: the old copy still renders, but its unlink button does nothing.</li>
+                <li>The request that exchanges the provider's authorization code for an access token now verifies the provider's TLS certificate. Facebook, Instagram and Twitter logins therefore need a working CA bundle on the server (LinkedIn, PayPal and Amazon already required one).</li>
+                <li>Passwords generated for social sign-ups are 32 characters long.</li>
+              </ul>
             </div>
             <div class="col-sm-6 image no-padding"><img src="images/product-social-login/Enable.png" class="width-full" alt="weltpixel"></div>
           </div>
