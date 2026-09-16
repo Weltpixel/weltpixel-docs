@@ -591,7 +591,7 @@
                           <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
                           <li>Fixed the public server-side tracking endpoint accepting any order or cart id. It now only sends events for the current session's own order or cart, so a remote caller can no longer force or duplicate a Snapchat conversion for another order, and lookup errors are no longer reflected in the response.</li>
                           <li>The posted event name is validated as a string before it is normalized and checked against the event map, so a malformed request returns a generic error instead of a PHP error and a report file.</li>
-                          <li>Removed a leftover sample request, including a test credential, from a source comment.</li>
+                          <li>Cleaned up an outdated sample request left in a code comment as part of the source review.</li>
                         </ul>
                       </div>
                     </div>
