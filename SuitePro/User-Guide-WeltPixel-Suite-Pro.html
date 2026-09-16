@@ -689,6 +689,72 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.5</span>
+                      <span class="version-date">September 16, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <h5>Security and hardening</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: the public purchase tracking endpoint only sends the server-side purchase event for the current session's own order, so a remote caller can no longer force a GA4 purchase conversion for another order; the promotion tracking endpoints cap the work done per request; the admin JSON export actions declare the GA4 settings permission and accept POST only; pixel script output is encoded; cookies set SameSite=Lax.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">All nine Conversions API addons (Meta, TikTok, Reddit, Microsoft Ads, X, Klaviyo, Pinterest, Snapchat, OpenAI Ads): the public server-side tracking endpoint only sends events for the current session's own order or cart, so a remote caller can no longer force or duplicate a conversion for another order; the posted event name is validated; lookup errors are no longer reflected in the response.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Reddit: the customer email is sent as a SHA-256 hash instead of in cleartext.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="change-type">
+                        <h5>Fixes and improvements</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: server-side refund events are stamped with the credit memo time instead of the order time, so refunds on older orders are no longer reported on the wrong day or dropped by Google's 72-hour limit.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: the stored GA session id is no longer sent as 0 on refund and purchase events (including cron-pushed purchases) when an older build had stored the raw cookie value.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Bing: the server-side add-to-wishlist event, which was never sent, is sent again. TikTok: fixed a fatal error on add-to-wishlist with server-side wishlist tracking enabled.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.4</span>
                       <span class="version-date">September 1, 2026</span>
                     </div>

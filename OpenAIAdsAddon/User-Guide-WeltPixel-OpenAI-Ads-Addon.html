@@ -575,6 +575,22 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.5</span>
+                      <span class="version-date">September 16, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+                          <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+                          <li>Fixed the public server-side tracking endpoint accepting any order or cart id. It now only sends events for the current session's own order or cart, so a remote caller can no longer force or duplicate an OpenAI Ads event for another order, and lookup errors are no longer reflected in the response.</li>
+                          <li>The posted event name is validated as a string before use, so a malformed request returns a generic error instead of a PHP error and a report file.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.4</span>
                       <span class="version-date">September 1, 2026</span>
                     </div>

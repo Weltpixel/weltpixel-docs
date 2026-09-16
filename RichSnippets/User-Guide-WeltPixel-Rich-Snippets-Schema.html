@@ -411,7 +411,20 @@
       <div id="change-log" class="section clearfix grey">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+          <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+          <ul>
+            <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+            <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+            <li>Google Cards: every structured-data document (product, breadcrumbs, social profile, logo, site search, contact point) is now built as data and encoded instead of assembled by hand. A value containing a quote could previously break the document's structure, and the child offer SKU was emitted with no filtering at all.</li>
+            <li>Google Cards: this also fixes the Product rich result being silently discarded on any product whose description contains a line break, and fixes text reaching Google HTML-encoded (an inch mark as <em>&amp;quot;</em>, an apostrophe as an entity).</li>
+            <li>Google Cards: the Open Graph and Twitter Card meta values are escaped for their attribute context. A product description containing an inch mark previously truncated the Twitter card description at the first quote.</li>
+            <li>Google Cards: the Open Graph image upload now verifies the file is a real image and validates the file name, the upload action accepts POST only, and the configuration image delete is kept inside its own upload directory.</li>
+            <li>Google Cards: fixed a fatal error instead of an error message when a page save carried a rejected or stale image upload.</li>
+            <li>After updating, clear <em>generated/code</em> and <em>generated/metadata</em>.</li>
+            <li><strong>Availability:</strong> version 1.17.5 of this extension ships in the edition bundled with the Pearl Theme and Marketing Suite PRO packages, delivered through Composer on an active Support & Updates plan. The public GitHub repository keeps the previous version and is not updated with this release.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
             <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

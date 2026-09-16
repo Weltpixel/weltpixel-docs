@@ -330,7 +330,16 @@
         <div id="change-log" class="section clearfix white">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
+            <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+            <ul>
+              <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+              <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+              <li>Fixed the public server-side tracking endpoint accepting any order id. It now only sends events for the current session's own order, so a remote caller can no longer force or duplicate a Reddit conversion for another order, and lookup errors are no longer reflected in the response.</li>
+              <li>The customer email is now sent to the Reddit Conversions API as a SHA-256 hash, as Reddit expects and as every other addon already did, instead of in cleartext.</li>
+              <li>The posted event name is validated against the configured event map before use, so a malformed request returns a generic error instead of a PHP error and a report file.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> Added server-side bot filtering, using the same merchant-editable pattern list as the GA4 Measurement Protocol, so traffic from self-identifying crawlers is no longer sent to the Conversions API. Order events are always sent.</li>
               <li>Fixed server-side events not honoring visitor consent. When <em>Require Visitor Consent for Server-Side Events</em> is enabled in the GA4 configuration, events are now gated on the shopper's advertising consent, and order events are judged on the consent stored with the order.</li>

@@ -595,6 +595,26 @@
                         </div>
                         <div class="version-item">
                           <div class="version-header">
+                            <span class="version-number">v.1.17.5</span>
+                            <span class="version-date">September 16, 2026</span>
+                          </div>
+                          <div class="version-changes">
+                            <div class="change-type">
+                              <ul>
+                                <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+                                <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+                                <li>Fixed the admin permission check being ineffective: the controllers named an ACL resource that was not defined, so Magento fell back to allowing any admin user. The resource is now defined, and the mass-delete action declares it too.</li>
+                                <li>Fixed the feed file name being used unvalidated in a file path. It is now reduced to a single safe base name on save and on read, so a feed can neither be written nor downloaded outside the feed folder.</li>
+                                <li>The save, mass-delete and generate actions now accept POST only with a form key, server-managed timestamps can no longer be set from the request, and a content mapping's own value is escaped on the edit screen.</li>
+                                <li>Fixed the default content mappings being displayed but lost on the first save.</li>
+                                <li>Fixed feed generation failing entirely on products that have no value for a mapped attribute, an unmapped option value, or an attribute without options.</li>
+                                <li><strong>Availability:</strong> version 1.17.5 of this extension ships in the edition bundled with the Pearl Theme and Marketing Suite PRO packages, delivered through Composer on an active Support & Updates plan. The public GitHub repository keeps the previous version and is not updated with this release.</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+<div class="version-item">
+                          <div class="version-header">
                             <span class="version-number">v.1.17.0</span>
                             <span class="version-date">May 18, 2026</span>
                           </div>

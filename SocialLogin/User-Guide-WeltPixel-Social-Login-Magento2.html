@@ -601,7 +601,19 @@
         <div id="change-log" class="section clearfix white">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+            <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+            <ul>
+              <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+              <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+              <li>Fixed unlinking a social account being reachable without signing in and looked up by id alone, so anyone could remove any customer's link by guessing its id. Unlinking now requires a signed-in customer, accepts POST only with a form key, and only matches links the customer owns. The linked accounts page redirects visitors who are not signed in to the login page.</li>
+              <li>Fixed TLS certificate verification being disabled on the request that exchanges the authorization code for an access token. That request carries the client secret and returns the profile the login is based on, so a network attacker could read the secret or forge the provider's answer and sign in as any account. Verification is now enforced.</li>
+              <li>Fixed every social login failing on PHP 8.5, where a deprecated curl call raised an error before the provider's response could be read.</li>
+              <li>The AJAX login and email sign-up steps accept POST only with a form key, the email step validates the address and only reports success when a customer was actually created, redirect targets are kept only on the store's own host, and the analytics, refresh and accounts admin actions declare their ACL resources.</li>
+              <li>Generated passwords for social sign-ups are now 32 characters. Merchants who have forked <em>account/social-accounts.phtml</em> should re-fork it, since the unlink control is now a posted form.</li>
+              <li><strong>Availability:</strong> version 1.17.5 of this extension ships in the edition bundled with the Pearl Theme and Marketing Suite PRO packages, delivered through Composer on an active Support & Updates plan. The public GitHub repository keeps the previous version and is not updated with this release.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
               <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

@@ -303,7 +303,17 @@
         <div id="change-log" class="section clearfix grey">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+            <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+            <ul>
+              <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+              <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+              <li>Fixed the consent description being decoded and rendered as live markup in both the popup and the widget, which allowed stored cross-site scripting on every storefront page including checkout. Descriptions now render through an allowlist of formatting and list tags. Note: a <em>target</em> attribute on a policy link is dropped by the allowlist, so the link opens in the same tab.</li>
+              <li>The consent initialisation block is now built as data and encoded. A popup heading ending in a backslash or containing a line break previously produced an invalid block, and because Magento initialises every declarative component on the page in one pass, that single block took down the consent component and every other component on the page.</li>
+              <li>Fixed the stored consent record being parsed without a guard. An unreadable record previously meant the consent default command was never issued, which lets tags behave as though consent had been granted. The default command is now issued on every path, an unusable record falls back to denied defaults and is cleared, and the visitor is asked again.</li>
+              <li>Fixed a whole-store error when the extension's configuration was resolved from a stale configuration cache. All configuration reads now fall back to the shipped defaults, and a broken configuration leaves the module off rather than rendering a half-built consent UI.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
               <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

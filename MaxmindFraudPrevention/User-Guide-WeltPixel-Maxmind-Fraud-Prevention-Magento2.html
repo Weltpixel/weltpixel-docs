@@ -332,7 +332,17 @@
       <div id="change-log" class="section clearfix white">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+          <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+          <ul>
+            <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+            <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+            <li>Fixed TLS certificate verification being disabled on the minFraud API call, which carries your MaxMind licence key and the order's customer data. With verification off, a network attacker could read the request or forge a low fraud score. Verification is now enforced, and the legacy API's <em>disable certificate check</em> option now defaults to off.</li>
+            <li>The chargeback submit action now requires the Sales Order permission instead of the generic admin resource, and accepts POST only.</li>
+            <li>MaxMind response fields shown in the order view tabs are escaped, and the account id is escaped where it is written into the device-tracking script.</li>
+            <li>Fixed fraud scoring failing with a connection error on PHP 8.5, where a deprecated curl call prevented the response from being read.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
             <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

@@ -1257,7 +1257,19 @@
       <div id="change-log" class="section clearfix grey">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
+          <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+          <ul>
+            <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+            <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+            <li>Fixed the public purchase tracking endpoint accepting any order id. It now only sends the server-side purchase event for the current session's own order, so a remote caller can no longer force a GA4 purchase conversion for another order or use the response to tell whether an order id exists.</li>
+            <li>The promotion view and click tracking endpoints now cap the number of promotions and product ids processed per request, so a single crafted request can no longer drive unbounded product loads and outbound tracking calls.</li>
+            <li>The admin JSON export and download actions (GTM containers, PRO and free editions) now declare the GA4 settings permission instead of inheriting the generic admin resource, and the generate actions accept POST only.</li>
+            <li>The view-item-list server-side read validates its cache key before it reaches the file system, product and order data written into inline pixel scripts is encoded so a product name cannot break out of the script, the Klaviyo public key and payment method titles are escaped, and the extension's cookies now set SameSite=Lax.</li>
+            <li>Fixed server-side refund events being stamped with the time the order was placed instead of the time the credit memo was created. Google clamps an event backdated more than 72 hours, or drops it under strict validation, so refunds on older orders were reported on the wrong day or not at all. If the refund is older than 72 hours the timestamp is now omitted so Google stamps it on receipt.</li>
+            <li>Fixed the stored GA session id being sent as 0 on refund and purchase events, including purchases pushed later by cron, when an older build had stored the raw cookie value. The numeric session id is now read back from any stored form, and the parameter is omitted when no session id is available.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.4 - September 1, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Added a <em>Require Visitor Consent for Server-Side Events</em> option that gates the GA4 Measurement Protocol and every Conversions API addon on the shopper's Consent Mode v2 choice. It works with Magento's Cookie Restriction Mode and external consent platforms, and because the consent state is stored on the order, an order sent later by cron is judged on the consent the shopper actually gave at checkout. Disabled by default.</li>
             <li><strong>New Feature:</strong> Added server-side bot filtering with a merchant-editable list of user-agent patterns, so traffic from crawlers is kept out of your Conversions API reports. Order events are always sent, since a completed order is a real conversion regardless of the user agent.</li>

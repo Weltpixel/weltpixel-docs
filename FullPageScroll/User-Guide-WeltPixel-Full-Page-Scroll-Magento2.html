@@ -268,7 +268,19 @@ template="WeltPixel_FullPageScroll::fullpagescroll.phtml"}}
       <div id="change-log" class="section clearfix grey">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+          <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+          <ul>
+            <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+            <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+            <li>Fixed the sections being chosen from the URL rather than from the page being rendered, which let a crafted URL render another page's sections on the home page. A page id passed explicitly through the block directive still wins.</li>
+            <li>Fixed the section identifier match treating its own separators as wildcards, so one page could pick up another page's sections when their keys shared a prefix.</li>
+            <li>The two module stylesheets are now loaded only on pages that actually have sections, instead of on every page of the store.</li>
+            <li>The section background image URL is validated before it reaches the markup, the module dependency declaration now validates against the framework schema, and the inline script carries a Content Security Policy nonce.</li>
+            <li>After updating, clear <em>generated/code</em> and <em>generated/metadata</em>.</li>
+            <li><strong>Availability:</strong> version 1.17.5 of this extension ships in the edition bundled with the Pearl Theme and Marketing Suite PRO packages, delivered through Composer on an active Support & Updates plan. The public GitHub repository keeps the previous version and is not updated with this release.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
             <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

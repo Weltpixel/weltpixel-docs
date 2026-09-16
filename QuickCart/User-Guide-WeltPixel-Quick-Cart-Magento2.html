@@ -364,7 +364,21 @@
         <div class="col-sm-6 image no-padding"><img src="images/quick-cart/CHANGELOG-L.png" class="width-full" alt="weltpixel"></div>
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+          <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+          <ul>
+            <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+            <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+            <li>The twenty configuration values written into the minicart's style block, which renders inside the header on every page, are now validated as real colours and lengths. A value that is not one resolves to the shipped default, so a crafted setting can no longer restyle or hide the whole storefront.</li>
+            <li>The two cart messages are rendered through a formatting allowlist, the JavaScript configuration values are escaped, the minicart carousel escapes its title and casts its breakpoints, and the carousel script carries a Content Security Policy nonce.</li>
+            <li>Fixed errors on every page of a store where the Quick Cart configuration section was only partially saved. Every configuration read now falls back to the shipped default.</li>
+            <li>Fixed the coupon endpoint answering with a 500 when submitted with no coupon code from the cart page, and fixed failed coupon attempts showing the shopper nothing instead of the error message.</li>
+            <li>The minicart item option values now follow core's rendering rules, so a value core escapes is no longer parsed as markup.</li>
+            <li>The custom cart page title is only assembled when the custom message is enabled.</li>
+            <li>After updating, clear <em>generated/code</em> and <em>generated/metadata</em>.</li>
+            <li><strong>Availability:</strong> version 1.17.5 of this extension ships in the edition bundled with the Pearl Theme and Marketing Suite PRO packages, delivered through Composer on an active Support & Updates plan. The public GitHub repository keeps the previous version and is not updated with this release.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
             <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>

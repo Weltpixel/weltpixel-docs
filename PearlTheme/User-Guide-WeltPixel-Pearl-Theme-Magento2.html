@@ -2826,7 +2826,31 @@ php bin/magento admin:user:create --admin-user='weltpixel' --admin-password='qwe
               alt="weltpixel"></div>
           <div class="col-sm-6 text">
             <h2>Pearl Change Log.</h2>
-            <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+            <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+            <ul>
+              <strong>Security and hardening:</strong>
+              <li>1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension and the Pearl theme, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+              <li>WeltPixel Backend: the licence lookup now uses bound database parameters, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+              <li>Theme templates: the product widget grids (v5, v8, v10, v16) and the product labels widget grid escape the widget title and product URLs, the category and search listing escapes product URLs, and the infinite scroll script emits its admin-typed strings as encoded data. These are the stored cross-site scripting classes Adobe addressed in APSB26-138.</li>
+              <li>Frontend Options, Custom Header, Custom Footer, Category Page and Product Page: every configuration value is validated as a real colour, length, number or keyword before it is written into the generated theme stylesheets, so a crafted setting can no longer inject rules served to every visitor or break the stylesheet compilation and leave pages unstyled. For a valid configuration the generated LESS is byte-identical.</li>
+              <li>Custom Header: the custom CSS/HTML field is no longer HTML-decoded and printed raw; it renders through a tag allowlist (a section or figure element degrades to its text, use a div instead). The sticky header flags are cast before they reach the page scripts.</li>
+              <li>Product Page: fixed reflected cross-site scripting through the product id in the review URL on every product page, fixed a stored SQL injection through the visitor-counter interval settings, and escaped the visitor-counter text, size-chart label, sale message, sticky-tabs colour and prev/next product names.</li>
+              <li>Design Elements: the collapsible widget flag and the back-to-top button styles are validated before they reach the page, and the CMS page whose custom CSS and JavaScript are rendered is taken from the page being rendered rather than from the URL.</li>
+              <li>Command: the module export redacts encrypted configuration values instead of writing them decrypted to a world-readable file in the working directory; exports are written under <em>var/weltpixel</em> with restricted permissions; the configuration import only accepts WeltPixel configuration paths; theme setup colour options are validated; the LESS/CSS regeneration action declares its own ACL resource and accepts POST only.</li>
+              <li>Quick View, Quick Cart, Mega Menu, Layered Navigation, Owl Carousel Slider, Product Labels, Newsletter, Multistore, Search Autocomplete, Recently Viewed Bar, Smart Product Tabs, Success Page, Full Page Scroll, Instagram Widget, Rich Snippets: every bundled component received the hardening listed in its own changelog, chiefly stored cross-site scripting routes through configuration values, admin actions that fell back to the generic admin permission, and public endpoints that accepted unvalidated input.</li>
+              <li>Mobile Detect: the vendored Mobile_Detect library is updated from 2.8.20 to 2.8.47.</li><br>
+              <strong>Fixes and improvements:</strong>
+              <li>Custom Header: fixed the configuration section failing to save, and the stylesheet silently not regenerating, when a colour was entered as a keyword or a logo file had been deleted.</li>
+              <li>Frontend Options: fixed a whole-storefront error when a breakpoint was stored as a non-numeric value.</li>
+              <li>Design Elements: fixed every product page answering with a 500 when the product page back-to-top button was enabled.</li>
+              <li>Category Page: fixed the stylesheet generation aborting for every store when a dropdown arrow colour was saved as a colour name.</li>
+              <li>Full Page Scroll template: fixed the sticky header flag producing a syntax error that disabled the feature when the value was empty, and added a Content Security Policy nonce.</li>
+              <li>Infinite scroll: the custom placeholder width keeps its unit and the viewed-products flag keeps its value.</li>
+              <li>Sample Data: fixed <em>setup:upgrade</em> aborting when the Owl Carousel Slider module is disabled, and re-seeding no longer resets a page's or block's store-view scope.</li>
+              <li>After updating, clear <em>generated/code</em> and <em>generated/metadata</em>, clear <em>var/view_preprocessed</em>, and run a static content deploy on production stores.</li><br>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
             <ul>
               <strong>New Features:</strong>
               <li>Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
@@ -2837,8 +2861,9 @@ php bin/magento admin:user:create --admin-user='weltpixel' --admin-password='qwe
               <li>Layered Navigation: Fixed an issue that could cause an exception on category pages when one or more attributes used in the layered navigation filters were incorrectly configured or orphaned in the catalog.</li><br>
               <br>
             </ul>
-<p><strong>What's new in v.1.16.0 - January 7, 2026</strong></p>
-            <ul>
+            <a href="#1160" data-toggle="collapse"><strong>What's new in v.1.16.0 - January 7, 2026</strong></a>
+            <div id="1160" class="collapse">
+  <ul>
               <strong>New Features:</strong>
               <li><strong>Giving back:</strong> As a celebration of over 10 years of activity within the Magento 2 ecosystem, and as a way to give back to the community, a number of WeltPixel extensions (both FREE and paid) have officially gone fully Open Source via public Github repositories. Find the full list on <a href="https://github.com/weltpixel" target="_blank">Github</a>.</li>
               <li>Introduced composer as the official and singular installation method for all WeltPixel products. Previously, this was only available for the PRO version of the Google Analytics 4 extension, as well as the Marketing Suite Pro.</li>
@@ -2848,6 +2873,9 @@ php bin/magento admin:user:create --admin-user='weltpixel' --admin-password='qwe
               <li>Success Page: Fixed a bug that caused the Google Map inserted onto the Success Page via the module's settings to fail to display when the customer address was on two or more lines. Single-line addresses worked fine.</li><br>
               <br>
             </ul>
+            </div>
+            <br>
+
 
 
             <a href="#1159" data-toggle="collapse"><strong>What's new in v.1.15.9 - October 28, 2025</strong></a>

@@ -638,7 +638,16 @@ allowfullscreen&gt; &lt;/iframe&gt;</pre>
       <div id="change-log" class="section clearfix white">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
+          <p><strong>What's new in v.1.17.5 - September 16, 2026</strong></p>
+          <ul>
+            <li><strong>Security release:</strong> 1.17.5 is a catalog-wide security and hardening release for every WeltPixel extension, published alongside Adobe's September 2026 Magento security bulletins (APSB26-138 and APSB26-146, the actively exploited CVE-2026-75650). Upgrading is strongly recommended for every store.</li>
+            <li>WeltPixel Backend (shared by every WeltPixel extension): the licence lookup now uses bound database parameters instead of building its query from the module name, TLS certificate verification is enforced on the licence activation call, and the module information and cron status pages escape their output.</li>
+            <li>Fixed a stored cross-site scripting issue in the custom banner slider: banner title, URL, target, alt text, button text, description and promotion fields were rendered without escaping for every storefront visitor. Every field is now escaped for its context; the description keeps a basic formatting allowlist, and the intentional raw-HTML fields are unchanged.</li>
+            <li>The banner custom CSS and the slider navigation border radius can no longer close the style block they are written into.</li>
+            <li>The navigation labels are escaped where they reach the slider script, and the breakpoint, mobile breakpoint and slide-by settings are cast to numbers before they reach the script or the media query.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.0 - May 18, 2026</strong></p>
           <ul>
             <li><strong>New Feature:</strong> Introduced compatibility with the newly released Magento 2.4.9, as well as the latest Magento Security Patches for previous versions.</li>
             <li><strong>New Feature:</strong> Introduced compatibility with PHP 8.5.</li>
