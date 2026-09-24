@@ -373,7 +373,7 @@
     },
     "WeltPixel_LayeredNavigation_Free": {
       "name": "Enhanced Layered Navigation",
-      "version": "1.17.0",
+      "version": "1.17.5",
       "theme_module": false,
       "is_free": true,
       "last_updated": "May 18, 2026"
@@ -387,7 +387,7 @@
     },
     "WeltPixel_Newsletter_Free": {
       "name": "Enhanced Newsletter Popup",
-      "version": "1.17.0",
+      "version": "1.17.5",
       "theme_module": false,
       "is_free": true,
       "last_updated": "May 18, 2026"
@@ -436,7 +436,7 @@
     },
     "WeltPixel_AdvancedWishlist_Free": {
       "name": "Multiple Ajax Wishlist",
-      "version": "1.17.0",
+      "version": "1.17.5",
       "theme_module": false,
       "is_free": true,
       "last_updated": "September 16, 2026"
