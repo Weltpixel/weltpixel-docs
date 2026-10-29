@@ -7,8 +7,16 @@
         <description>WeltPixel</description>
         <copyright>Copyright (c) 2026 WeltPixel</copyright>
         <language>en</language>
-        <lastBuildDate>Wed, 16 Sep 2026 06:00:00 UTC</lastBuildDate>
+        <lastBuildDate>Thu, 29 Oct 2026 06:00:00 UTC</lastBuildDate>
         <ttl>300</ttl>
+        <item>
+            <title><![CDATA[ WeltPixel 1.17.6 Security Hardening and Purchase Tracking Fixes - plus the October 2026 Magento Security Checklist ]]></title>
+            <link><![CDATA[https://weltpixel.com/blogs/magento/magento-security-update-october-2026-weltpixel-1-17-6?utm_source=Admin&utm_medium=Notifications&utm_campaign=WPX1176Security]]></link>
+            <type><![CDATA[security]]></type>
+            <severity>2</severity>
+            <description><![CDATA[WeltPixel 1.17.6 is now available for every extension in the catalog. It adds security hardening in Google Analytics 4, Social Login, Product Labels and Speed Optimization, plus purchase tracking fixes across GA4 and the nine server-side Conversions API addons: every purchase now uses one event ID so ad platforms deduplicate it, values are correct on tax-inclusive catalogs and dynamic bundles, the Reddit addon moves to Conversions API v3, and a new option excludes purchase events by order source. For October, also apply Adobe's APSB26-153 security update, keep the September hotfix for CVE-2026-75650, and update PHP for PHP2Shell. Updating to 1.17.6 requires an active Support & Updates plan.]]></description>
+            <pubDate>Thu, 29 Oct 2026 06:00:00 UTC</pubDate>
+        </item>
         <item>
             <title><![CDATA[ WeltPixel 1.17.5 Security Release for All Extensions - and the Magento Zero-Day CVE-2026-75650 to Patch First ]]></title>
             <link><![CDATA[https://weltpixel.com/blogs/magento/magento-security-update-september-2026-weltpixel-1-17-5?utm_source=Admin&utm_medium=Notifications&utm_campaign=WPX1175Security]]></link>
