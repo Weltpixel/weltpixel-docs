@@ -689,6 +689,85 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.6</span>
+                      <span class="version-date">October 29, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <h5>New Features</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4 and every Conversions API addon can now skip server-side purchase events for orders created in the admin, by API integrations, or by cron, CLI and import scripts. It's off by default and set for each platform.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Reddit moves to Reddit's Conversions API v3 and gains a PageVisit event, and the Reddit click ID now travels with the order, so purchases sent later by cron still carry it.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Visitors without a Google Analytics cookie now get their own GA4 client ID, and Pinterest can give guests an anonymous ID that its tag and Conversions API share. Both are created only with consent, and GA4 adds an <em>Additional CSP Hosts</em> setting for extra tracking hosts.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="change-type">
+                        <h5>Security</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: catalog data and search terms written into the pixel scripts are now escaped, and the log viewer shows logged values as plain text.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="change-type">
+                        <h5>Fixes and improvements</h5>
+                        <div class="change-list">
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">A purchase sent again now keeps the same event ID in the browser, the server-side trackers and the purchase cron, so ad platforms deduplicate it instead of counting it twice, and events a platform accepted are no longer resent. Add-to-cart events count every line added in the same cart update.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Add-to-cart values are now the unit price times the quantity, and Meta, Klaviyo, Pinterest, X and Bing get the extra product data they ask for. GA4 now reports tax-inclusive catalogs, bundles, shipping, multiple currencies and refunds correctly.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Pinterest, Snapchat, TikTok and X now hash email and phone the way each platform expects, and Klaviyo no longer splits a customer's events across one profile per browser.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">Google Analytics 4: purchases are dated at the order time, sign-ups count only real shopper registrations, and the exported server-side GTM container no longer splits shoppers into two users. A pixel that loads late no longer stops the others' add-to-cart events.</span>
+                            </div>
+                          </div>
+                          <div class="change-item">
+                            <div class="change-header">
+                              <i class="fa fa-plus-circle"></i>
+                              <span style="display: inline;">After updating, run <em>setup:upgrade</em> and, in production mode, <em>setup:di:compile</em>.</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.5</span>
                       <span class="version-date">September 16, 2026</span>
                     </div>

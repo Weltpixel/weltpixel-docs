@@ -485,6 +485,24 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.6</span>
+                      <span class="version-date">October 29, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li><strong>New Feature:</strong> You can now stop sending server-side purchase events to Microsoft Advertising for orders created in the admin, by API integrations, or by cron, CLI and import scripts. Turn it on under <em>Exclude Purchase Events by Order Source</em>; it's off by default.</li>
+                          <li>A purchase sent again, for example by the purchase cron, now keeps the order's event ID, so Microsoft Advertising deduplicates it instead of counting another purchase.</li>
+                          <li>Add-to-cart events now count every line added in the same cart update and use the unit price times the quantity. An event that couldn't be built is now skipped instead of resending the previous item's data.</li>
+                          <li>Order events use the product name as it was ordered, checkout prices on multi-currency stores are in the cart's currency, and the Purchase goal uses the order's currency.</li>
+                          <li>After updating, flush the cache and, in production mode, run <em>setup:di:compile</em>.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.5</span>
                       <span class="version-date">September 16, 2026</span>
                     </div>

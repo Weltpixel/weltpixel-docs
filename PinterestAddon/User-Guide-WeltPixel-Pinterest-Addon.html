@@ -585,6 +585,26 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.6</span>
+                      <span class="version-date">October 29, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li><strong>New Feature:</strong> You can now stop sending server-side checkout events to Pinterest for orders created in the admin, by API integrations, or by cron, CLI and import scripts. Turn it on under <em>Exclude Purchase Events by Order Source</em>; it's off by default.</li>
+                          <li><strong>New Feature:</strong> <em>Send an Anonymous external_id for Guest Visitors</em> gives guests a random ID that the Pinterest tag and the Conversions API both send, so Pinterest can match their browser and server events. It's off by default, and the ID is only created once marketing consent allows it.</li>
+                          <li>An order's checkout event now keeps the same event ID when it's sent again, so Pinterest deduplicates it instead of counting another purchase. Events Pinterest accepted are no longer treated as failed and resent.</li>
+                          <li>Add-to-cart events now count every line added in the same cart update, include the number of items, and use the unit price times the quantity as the value.</li>
+                          <li>Email and phone are now hashed the way Pinterest expects, and orders sent by the purchase cron carry their own customer ID instead of one shared empty value.</li>
+                          <li>Order events use the product name as it was ordered and no longer count items from other orders, and checkout prices on multi-currency stores are in the cart's currency.</li>
+                          <li>After updating, flush the cache and, in production mode, run <em>setup:di:compile</em>.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.5</span>
                       <span class="version-date">September 16, 2026</span>
                     </div>

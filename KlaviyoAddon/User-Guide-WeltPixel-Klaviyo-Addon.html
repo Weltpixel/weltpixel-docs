@@ -577,6 +577,25 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.6</span>
+                      <span class="version-date">October 29, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li><strong>New Feature:</strong> You can now stop sending server-side Placed Order events to Klaviyo for orders created in the admin, by API integrations, or by cron, CLI and import scripts. Turn it on under <em>Exclude Purchase Events by Order Source</em>; it's off by default.</li>
+                          <li>Fixed a customer's events splitting across a separate Klaviyo profile for each browser, which could put a Placed Order on one profile while an abandoned cart flow ran on another. Events now identify the profile by email and Klaviyo's exchange ID.</li>
+                          <li>A Placed Order sent again now keeps the order's event ID, so it isn't counted as another order, and events Klaviyo accepted are no longer resent.</li>
+                          <li>Added to Cart now also sends the product properties Klaviyo recommends (name, ID, SKU, categories, image, URL, price and quantity), and the existing ones stay.</li>
+                          <li>Event value and currency are now sent the way Klaviyo's API documents them. Order events use the product name as it was ordered, and checkout prices on multi-currency stores are in the cart's currency.</li>
+                          <li>After updating, flush the cache and, in production mode, run <em>setup:di:compile</em>.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.5</span>
                       <span class="version-date">September 16, 2026</span>
                     </div>

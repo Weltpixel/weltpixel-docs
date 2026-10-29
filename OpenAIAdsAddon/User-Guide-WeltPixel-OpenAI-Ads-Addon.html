@@ -575,6 +575,24 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.6</span>
+                      <span class="version-date">October 29, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li><strong>New Feature:</strong> You can now stop sending server-side order_created events to OpenAI Ads for orders created in the admin, by API integrations, or by cron, CLI and import scripts. Turn it on under <em>Exclude Purchase Events by Order Source</em>; it's off by default.</li>
+                          <li>An order event sent again now keeps the order's event ID, so OpenAI Ads deduplicates it instead of counting another purchase, and events OpenAI Ads accepted are no longer resent.</li>
+                          <li>Add-to-cart events now count every line added in the same cart update, not only the first.</li>
+                          <li>order_created uses the product name as it was ordered, and checkout prices on multi-currency stores are in the cart's currency.</li>
+                          <li>After updating, flush the cache and, in production mode, run <em>setup:di:compile</em>.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.5</span>
                       <span class="version-date">September 16, 2026</span>
                     </div>
