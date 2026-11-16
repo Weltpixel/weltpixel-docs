@@ -457,14 +457,14 @@
     },
     "WeltPixel_FrameworkEssential": {
       "name": "Stack Framework for Magento 2 Essential Pack",
-      "version": "1.17.7",
+      "version": "1.17.6",
       "theme_module": false,
       "is_free": false,
       "last_updated": "November 16, 2026"
     },
     "WeltPixel_FrameworkPro": {
       "name": "Stack Framework for Magento 2 Professional Pack",
-      "version": "1.17.7",
+      "version": "1.17.6",
       "theme_module": false,
       "is_free": false,
       "last_updated": "November 16, 2026"
