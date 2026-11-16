@@ -7,8 +7,16 @@
         <description>WeltPixel</description>
         <copyright>Copyright (c) 2026 WeltPixel</copyright>
         <language>en</language>
-        <lastBuildDate>Thu, 29 Oct 2026 06:00:00 UTC</lastBuildDate>
+        <lastBuildDate>Mon, 16 Nov 2026 06:00:00 UTC</lastBuildDate>
         <ttl>300</ttl>
+        <item>
+            <title><![CDATA[ WeltPixel GA4 1.17.7: one update to catch up, plus current Meta and Klaviyo API versions ]]></title>
+            <link><![CDATA[https://weltpixel.com/blogs/magento/product-updates-and-new-releases-november-2026?utm_source=Admin&utm_medium=notification&utm_campaign=WPX1177]]></link>
+            <type><![CDATA[marketing]]></type>
+            <severity>4</severity>
+            <description><![CDATA[WeltPixel 1.17.7 is out for Google Analytics 4, its server-side addons, the Hyvä modules and Suite PRO. It keeps ad click IDs from the landing page, sends cron purchases with the shopper's data, and moves Meta and Klaviyo to API versions both currently support. Skipped 1.17.5? 1.17.7 includes it. Update GA4 PRO and its addons together.]]></description>
+            <pubDate>Mon, 16 Nov 2026 06:00:00 UTC</pubDate>
+        </item>
         <item>
             <title><![CDATA[ WeltPixel 1.17.6 Security Hardening and Purchase Tracking Fixes - plus the October 2026 Magento Security Checklist ]]></title>
             <link><![CDATA[https://weltpixel.com/blogs/magento/magento-security-update-october-2026-weltpixel-1-17-6?utm_source=Admin&utm_medium=Notifications&utm_campaign=WPX1176Security]]></link>
