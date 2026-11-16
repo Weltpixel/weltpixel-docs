@@ -1261,7 +1261,29 @@
       <div id="change-log" class="section clearfix grey">
         <div class="col-sm-6 text">
           <h2>Change Log.</h2>
-          <p><strong>What's new in v.1.17.6 - October 29, 2026</strong></p>
+          <p><strong>What's new in v.1.17.7 - November 16, 2026</strong></p>
+          <ul>
+            <li><strong>New Feature (PRO):</strong> Each server-side addon's purchase event is now prepared and stored when the order is placed, so a purchase the cron sends later carries the shopper's data from that visit and the time of the order. Stored events are removed after 7 days.</li>
+            <li><strong>New Feature (PRO):</strong> Ad click IDs in the landing page's address are now kept by the store for the Snapchat, TikTok and Pinterest addons. Snapchat sends them with its server-side events, and TikTok and Pinterest use them when their own cookie is missing. Pages also send Meta's click ID from their address with Meta's server-side events.</li>
+            <li><strong>New Feature (PRO):</strong> <em>Delay Before the Cron Sends Unsent Purchases (minutes)</em> lets you set how long the cron waits before it sends purchases that haven't been sent yet.</li>
+            <li><strong>New Feature (PRO):</strong> A new Klaviyo setting lets you choose the metric name reported when a checkout starts.</li>
+            <li><strong>New Feature:</strong> <em>Use Legacy Impression Loading</em>, off by default, reads category and search impressions the previous way if you need to fall back. It has no effect with Smile ElasticSuite. The <em>Load Product List Block</em> setting is removed, since it no longer changes anything.</li>
+            <li>Category, search, product and cart pages no longer render their product lists twice when impressions are tracked, including with Smile ElasticSuite, AJAX layered navigation and infinite scroll. The category page also no longer loads a second copy of its product list with its own search request.</li>
+            <li>(PRO) With <em>Require Visitor Consent for Server-Side Events</em> on, the server-side purchase now sends the ad_user_data and ad_personalization consent stored with the order, and the hashed customer data is left out of the purchase unless the visitor granted ad_user_data.</li>
+            <li>(PRO) When your consent tool sets Google Consent Mode defaults for specific regions, the module now resolves them with the state Google's tag resolved for the visitor. A denial for one region followed by a global grant is no longer read as granted.</li>
+            <li>(PRO) The consent state the module remembers from your consent tool now expires 24 hours after the tool last confirmed it. Before, it stayed valid for a year.</li>
+            <li>(PRO) Customer data sent to Google for matching is now normalized field by field before hashing. Emails, names and street addresses are normalized, accented and non-Latin letters are kept, empty values are left out, and phone numbers are sent in international format with the calling code of the address country.</li>
+            <li>(PRO) More purchases keep the shopper's Google Analytics client and session IDs. The IDs captured on the cart carry over to the order when the order request has none, and the success page fills them in when the stored purchase has none.</li>
+            <li>(PRO) When two processes send the same order's purchase at the same moment, they now take turns, so the second one sees the order as already sent. Google Analytics and Google click ID cookie values too long to store with the order are now ignored.</li>
+            <li>(PRO) OpenAI Ads browser events for cart additions, checkout starts and orders are no longer dropped by OpenAI's pixel, which rejected a product field that only its Conversions API accepts.</li>
+            <li>Fixed the order success page failing when the promotion click cookie is incomplete. The purchase is then tracked without the promotion, and a promotion click is now reported with one order only, not with the shopper's later orders.</li>
+            <li>Fixed an error on every page right after an update, when a setting new in that version was read before the configuration cache was cleaned. A setting missing from the cached configuration now falls back to its default value.</li>
+            <li>(PRO) Hyvä and Hyvä CSP compatibility modules: the regional consent defaults, the 24-hour consent state and the Meta click ID from the page address now work on Hyvä storefronts too. On Hyvä CSP, the click ID script is allowed by the Content Security Policy.</li>
+            <li>GA4 PRO 1.17.7, its server-side addons and the Hyvä compatibility modules have to be updated together. The addons and the Hyvä modules need GA4 PRO 1.17.7 and fail with an older version.</li>
+            <li>After updating GA4 PRO, run <em>setup:upgrade</em>, since it adds a table, then, in production mode, <em>setup:di:compile</em> and the static content deploy. For the Standard edition, run <em>setup:upgrade</em> and, in production mode, <em>setup:di:compile</em> and the static content deploy.</li>
+            <br>
+          </ul>
+<p><strong>What's new in v.1.17.6 - October 29, 2026</strong></p>
           <ul>
             <li><strong>New Feature (PRO):</strong> You can now stop sending server-side purchase events for orders created in the admin, by API integrations, or by cron, CLI and import scripts, with <em>Exclude Purchase Events by Order Source</em> under Server Side Measurement and in each Conversions API addon. It's off by default, and orders left out this way, or for missing consent, now show as <em>Skipped</em> in the order grid's <em>Sent to Measurement Protocol</em> column.</li>
             <li><strong>New Feature (PRO):</strong> Reddit PageVisit is now tracked in the browser and server-side as a deduplicated pair, and the Reddit click ID from the ad link is kept for 30 days so the Reddit addon can attribute later events. If you turn PageVisit on, remove <em>rdt('track', 'PageVisit')</em> from the <em>Reddit Pixel Tracking Javascript Code</em> field.</li>

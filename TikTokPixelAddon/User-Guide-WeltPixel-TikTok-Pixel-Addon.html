@@ -332,7 +332,16 @@
         <div id="change-log" class="section clearfix white">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.6 - October 29, 2026</strong></p>
+            <p><strong>What's new in v.1.17.7 - November 16, 2026</strong></p>
+            <ul>
+              <li>When TikTok's own cookie is missing, server-side events now carry the TikTok click ID from the page address or the one kept from the landing page.</li>
+              <li>PlaceAnOrder, CompletePayment and Purchase events the cron sends later now use the events stored when the order was placed, so they carry the shopper's data from that visit and the time of the order.</li>
+              <li>Phone numbers are now sent in international format, with the calling code of the address country.</li>
+              <li>Update this addon together with Google Analytics 4 PRO 1.17.7 and the Hyvä compatibility modules. The addon needs GA4 PRO 1.17.7 and fails with an older version.</li>
+              <li>After updating, run <em>setup:upgrade</em> for GA4 PRO and, in production mode, <em>setup:di:compile</em>.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.6 - October 29, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> You can now stop sending server-side purchase events (PlaceAnOrder, CompletePayment and Purchase) to TikTok for orders created in the admin, by API integrations, or by cron, CLI and import scripts. Turn it on under <em>Exclude Purchase Events by Order Source</em>; it's off by default.</li>
               <li>An order's purchase events now keep the same event ID when they're sent again, so TikTok deduplicates them instead of counting another purchase. Events TikTok accepted are no longer logged as errors and resent by the purchase cron.</li>

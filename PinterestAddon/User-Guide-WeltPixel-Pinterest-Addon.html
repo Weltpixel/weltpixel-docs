@@ -585,6 +585,24 @@
                 <div class="version-history">
                   <div class="version-item">
                     <div class="version-header">
+                      <span class="version-number">v.1.17.7</span>
+                      <span class="version-date">November 16, 2026</span>
+                    </div>
+                    <div class="version-changes">
+                      <div class="change-type">
+                        <ul>
+                          <li>When Pinterest's own click ID cookie is missing, events now carry the Pinterest click ID from the page address or the one kept from the landing page.</li>
+                          <li>Purchases the cron sends later now use the checkout event stored when the order was placed, so they carry the shopper's data from that visit and the time of the order.</li>
+                          <li>The session ID is no longer sent as the external ID. A visitor without a customer account, an order or the anonymous ID is sent without one.</li>
+                          <li>Phone numbers are now sent in international format, with the calling code of the address country.</li>
+                          <li>Update this addon together with Google Analytics 4 PRO 1.17.7 and the Hyvä compatibility modules. The addon needs GA4 PRO 1.17.7 and fails with an older version.</li>
+                          <li>After updating, run <em>setup:upgrade</em> for GA4 PRO and, in production mode, <em>setup:di:compile</em>.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+<div class="version-item">
+                    <div class="version-header">
                       <span class="version-number">v.1.17.6</span>
                       <span class="version-date">October 29, 2026</span>
                     </div>

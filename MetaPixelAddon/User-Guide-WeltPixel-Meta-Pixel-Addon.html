@@ -333,7 +333,18 @@
         <div id="change-log" class="section clearfix white">
           <div class="col-sm-6 text">
             <h2>Change Log.</h2>
-            <p><strong>What's new in v.1.17.6 - October 29, 2026</strong></p>
+            <p><strong>What's new in v.1.17.7 - November 16, 2026</strong></p>
+            <ul>
+              <li>Events are now sent to Meta Graph API v26.0.</li>
+              <li>The addon now stores the Meta click ID that a page sends with its server-side events, and a newer ad click replaces the stored one. With GA4 PRO 1.17.7, pages send the click ID from their own address.</li>
+              <li>With <em>Require Visitor Consent for Server-Side Events</em> on, the fallback click ID cookie is stored only once the visitor grants advertising consent.</li>
+              <li>Purchases the cron sends later now use the Purchase event stored when the order was placed, so they carry the shopper's data from that visit and the time of the order.</li>
+              <li>Phone numbers are now sent in international format, with the calling code of the address country.</li>
+              <li>Update this addon together with Google Analytics 4 PRO 1.17.7 and the Hyvä compatibility modules. The addon needs GA4 PRO 1.17.7 and fails with an older version.</li>
+              <li>After updating, run <em>setup:upgrade</em> for GA4 PRO and, in production mode, <em>setup:di:compile</em>.</li>
+              <br>
+            </ul>
+<p><strong>What's new in v.1.17.6 - October 29, 2026</strong></p>
             <ul>
               <li><strong>New Feature:</strong> You can now stop sending server-side Purchase events to Meta for orders created in the admin, by API integrations, or by cron, CLI and import scripts. Turn it on under <em>Exclude Purchase Events by Order Source</em>; it's off by default.</li>
               <li>A Purchase sent again, for example by the purchase cron, now keeps the order's event ID, so Meta deduplicates it instead of counting another purchase. Events Meta accepted are also no longer treated as failed and resent.</li>
